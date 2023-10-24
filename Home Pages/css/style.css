@@ -1,4 +1,3 @@
-
 :root {
   --bg-wild-blue-yonder: hsla(216, 33%, 68%, 1);
   --bg-carolina-blue: hsla(199, 89%, 49%, 1);
@@ -1321,7 +1320,7 @@ transform: scale(1.2);
   }
   
   .title {
-    font-size: 53px;
+    font-size: 45px;
     font-weight: 100px;
     letter-spacing: var(--ls);
     position: relative;
