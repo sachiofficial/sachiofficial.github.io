@@ -1320,7 +1320,7 @@ transform: scale(1.2);
   }
   
   .title {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 100px;
     letter-spacing: var(--ls);
     position: relative;
