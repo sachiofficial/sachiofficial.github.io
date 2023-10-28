@@ -39,8 +39,23 @@
   <link rel="preload" as="image" href="Blog Post/images/pattern-3.svg">
 
 </head>
-
 <body id="top">
+  <div id="loading-screen" class="loading-screen">
+    <svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+        <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+        <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+      </linearGradient>
+      <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+        <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+      </linearGradient>
+    </defs>
+    <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
+    <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
+  </svg>
+</div>
 
   <!-- 
     - #HEADER
@@ -149,21 +164,7 @@
     </div>
   </header>
 
-  <div id="loading-screen" class="loading-screen">
-    <svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
-        <stop offset="0%" stop-color="hsl(313,90%,55%)" />
-        <stop offset="100%" stop-color="hsl(223,90%,55%)" />
-      </linearGradient>
-      <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="hsl(313,90%,55%)" />
-        <stop offset="100%" stop-color="hsl(223,90%,55%)" />
-      </linearGradient>
-    </defs>
-    <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
-    <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
-  </svg></div>
+ 
       
       <!-- 
         - #FEATURED POST
@@ -944,19 +945,18 @@
                   <div class="comment-card">
 
                     <blockquote class="card-text">
-                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
-                      roadrunner “
+                      “This is a valuable resource for anyone interested in the subject. Thanks for sharing your insights. “
                     </blockquote>
 
                     <div class="profile-card">
                       <figure class="profile-banner img-holder">
-                        <img src="Blog Post/images/author-6.png" width="32" height="32" loading="lazy" alt="Jane Cooper">
+                        <img src="Blog Post/images/comment_I.png" width="32" height="32" loading="lazy" alt="Jane Cooper">
                       </figure>
 
                       <div>
                         <p class="card-title">Jane Cooper</p>
 
-                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                        <time class="card-date" datetime="2022-04-15">27 december 2022</time>
                       </div>
                     </div>
 
@@ -967,19 +967,18 @@
                   <div class="comment-card">
 
                     <blockquote class="card-text">
-                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
-                      roadrunner “
+                      “ I had a question about a specific point in the article, and your post addressed it perfectly. Thanks for the clarity! “
                     </blockquote>
 
                     <div class="profile-card">
                       <figure class="profile-banner img-holder">
-                        <img src="Blog Post/images/author-7.png" width="32" height="32" loading="lazy" alt="Katen Doe">
+                        <img src="Blog Post/images/comment_II.png" width="32" height="32" loading="lazy" alt="Katen Doe">
                       </figure>
 
                       <div>
                         <p class="card-title">Katen Doe</p>
 
-                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                        <time class="card-date" datetime="2022-04-15">15 december 2023</time>
                       </div>
                     </div>
 
@@ -990,20 +989,19 @@
                   <div class="comment-card">
 
                     <blockquote class="card-text">
-                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
-                      roadrunner “
+                      “ Your personal anecdotes really added a personal touch to the article. It helped me connect with the content. “
                     </blockquote>
 
                     <div class="profile-card">
                       <figure class="profile-banner img-holder">
-                        <img src="Blog Post/images/author-8.png" width="32" height="32" loading="lazy"
+                        <img src="Blog Post/images/comment_III.png" width="32" height="32" loading="lazy"
                           alt="Barbara Cartland">
                       </figure>
 
                       <div>
                         <p class="card-title">Barbara Cartland</p>
 
-                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                        <time class="card-date" datetime="2022-04-15">06 december 2022</time>
                       </div>
                     </div>
 
@@ -1013,20 +1011,19 @@
                   <div class="comment-card">
 
                     <blockquote class="card-text">
-                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
-                      roadrunner “
+                      “ Your article inspired me to explore the topic further. Do you have any recommended resources for learning more? “
                     </blockquote>
 
                     <div class="profile-card">
                       <figure class="profile-banner img-holder">
-                        <img src="Blog Post/images/author-8.png" width="32" height="32" loading="lazy"
+                        <img src="Blog Post/images/comment_IV.png" width="32" height="32" loading="lazy"
                           alt="Barbara Cartland">
                       </figure>
 
                       <div>
                         <p class="card-title">Barbara Cartland</p>
 
-                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                        <time class="card-date" datetime="2022-04-15">20 november 2022</time>
                       </div>
                     </div>
 
