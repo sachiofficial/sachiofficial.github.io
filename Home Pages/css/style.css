@@ -54,6 +54,14 @@
 
 /*-------------- RESET ---------------------*/
 
+
+
+/* Remove blue highlight in mobile view */
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 *,
 *::before,
 *::after {
