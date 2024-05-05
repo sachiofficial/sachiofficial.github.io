@@ -98,7 +98,7 @@
             <img src="Home Pages/images/Home Page/logo.png" width="200" height="37" alt="Wren logo">
           </a>
 
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler  onclick="document.getElementById('arrows').style.display='flex'">
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
         </div>
@@ -132,7 +132,7 @@
 
         </ul>
 
-        <div class="navbar-bottom">
+        <div class="navbar-bottom" >
 
           <div class="profile-card">
             <img src="Home Pages/images/Home Page/author.png" width="48" height="48" alt="Steven"
@@ -188,8 +188,8 @@
 
       <a href="#" target=”_blank” class="btn btn-primary">Download</a>
 
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler onclick="document.getElementById('arrows').style.display='none'">
+        <ion-icon name="menu-outline" aria-hidden="true" ></ion-icon>
       </button>
 
     </div>
@@ -204,7 +204,7 @@
           <div class="item">
             <img src="image/img1.jpg">
             <div class="content">
-              <div class="author">LUNDEV</div>
+              <div class="author">WELCOME!</div>
               <div class="title102">WEB DESIGNER</div>
               <div class="topic">LAKSHAN</div>
               <div class="des">
@@ -223,9 +223,9 @@
           <div class="item">
             <img src="image/img2.jpg">
             <div class="content">
-              <div class="author">LUNDEV</div>
-              <div class="title102">DESIGN SLIDER</div>
-              <div class="topic">ANIMAL</div>
+              <div class="author103">INTERDUCING!</div>
+              <div class="title102">NEXT MUSIC</div>
+              <div class="topic103">SOFTWARE</div>
               <div class="des">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
                 itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
@@ -241,9 +241,9 @@
           <div class="item">
             <img src="image/img3.jpg">
             <div class="content">
-              <div class="author">LUNDEV</div>
-              <div class="title102">DESIGN SLIDER</div>
-              <div class="topic">ANIMAL</div>
+              <div class="author103">COMING SOON</div>
+              <div class="title102">GENERATIVE AI</div>
+              <div class="topic103">CHAT-GPT</div>
               <div class="des">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
                 itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
@@ -295,8 +295,8 @@
         </div>
         <!-- next prev -->
 
-        <div class="arrows">
-          <button id="prev"><</button>
+        <div class="arrows" id="arrows">
+              <button id="prev"><</button>
               <button id="next">></button>
         </div>
         <!-- time running -->
@@ -304,82 +304,25 @@
       </div>
 
 
-      <!-- Hero Section -->
-
-      <section class="hero" id="home" aria-label="home">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <p class="hero-subtitle">Hello Everyone!</p>
-
-            <h1 class="headline headline-1 section-title desktop">
-              I’m <span class="span">Sachintha Lakshan</span>
-            </h1>
-            <h1 class="mobile-title mobile">
-              I’m <br><span class="span">SACHINTHA</span>
-              <span class="span2">LAKSHAN</span>
-            </h1>
-
-            <p class="hero-text">
-              I am Sachintha Lakshan, and I created this website for you to enjoy entertainment, stay updated on the
-              latest world news, connect with like-minded individuals, explore various topics, and share your thoughts.
-            </p>
-
-            <div class="input-wrapper">
-
-              <input type="email" name="email_address" placeholder="Type your email address" required
-                class="input-field" autocomplete="off">
-
-              <button class="btn btn-primary">
-                <span class="span">Massege</span>
-
-                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-              </button>
-
-            </div>
-
-          </div>
-
-          <div class="hero-banner">
-
-            <img src="Home Pages/images/Home Page/hero-banner.png" width="27" height="90" alt="Wren Clark"
-              class="w-100">
-
-            <img src="Home Pages/images/Home Page/pattern-2.svg" width="27" height="26" alt="shape"
-              class="shape shape-1">
-
-            <img src="Home Pages/images/Home Page/pattern-3.svg" width="27" height="26" alt="shape"
-              class="shape shape-2">
-
-          </div>
-
-          <img src="Home Pages/images/Home Page/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
-
-          <img src="Home Pages/images/Home Page/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
-
-        </div>
-      </section>
 
       <!-- About Me -->
-
+      
       <section class="about">
         <div class="main">
-          <img src="Home Pages/images/Home Page/Human.png">
+          <img src="Home Pages/images/Home Page/Human.png" class="image-human fade-in-scroll">
           <div class="about-text">
-            <h1>About Me</h1>
-            <h5>Who is <span class="span-102" style="display: inline;">Sachintha Lakshan</span></h5>
-            <p>Welcome to Sachintha Lakshan's website! In the tranquil town of Kandepiwala, Sri Lanka, you'll find me,
-              Sachinta Lakshan, with a deep passion for web development and a presence on two active YouTube channels.
-              Through my work, I strive to capture the beauty of life and convey it to my audience. Beyond the screen, I
-              manage a carefully nurtured website where I explore the ever-changing wonders of our world in the digital
-              age. My goal is to inform, inspire, and immerse you in the fascinating moments of our fast-paced world.
-              Through my website, I provide insights and stories, offering a glimpse into the dynamic and multifaceted
-              nature of The wonderful world of cyber.</p>
-            <button class="custom-btn2">Know more</button>
+            <div class="fade-container">
+              <h1>About Me</h1>
+              <h5>Who is <span class="span-102" style="display: inline;">Sachintha Lakshan</span></h5>
+              <p id="my-paragraph">Welcome to Sachintha Lakshan's website! In the tranquil town of Kandepiwala, Sri Lanka, you'll find me, Sachinta Lakshan, with a deep passion for web development and a presence on two active YouTube channels. Through my work, I strive to capture the beauty of life and convey it to my audience. Beyond the screen, I manage a carefully nurtured website where I explore the ever-changing wonders of our world in the digital age. My goal is to inform, inspire, and immerse you in the fascinating moments of our fast-paced world. Through my website, I provide insights and stories, offering a glimpse into the dynamic and multifaceted nature of The wonderful world of cyber.</p>
+      
+              <button class="custom-btn2">Know more</button>
+            </div>
           </div>
         </div>
       </section>
+      
+      
       <br><br><br><br><br><br>
 
       <!--Social Media Links-->
@@ -448,25 +391,11 @@
       <!-- Image Gallary -->
 
       <div class="h9"><b>Explore Our Music App</b></div><br>
-      <article class="gallery">
-        <img src="https://assets.codepen.io/1506195/unsplash-music-0.avif" alt="guitar player at concert" />
-        <img src="https://assets.codepen.io/1506195/unsplash-music-1.avif" alt="duo singing" />
-        <img src="https://assets.codepen.io/1506195/unsplash-music-2.avif" alt="crowd cheering" />
-        <img src="https://assets.codepen.io/1506195/unsplash-music-2.avif" alt="crowd cheering" />
-        <img src="https://assets.codepen.io/1506195/unsplash-music-2.avif" alt="crowd cheering" />
-        <img src="https://assets.codepen.io/1506195/unsplash-music-2.avif" alt="crowd cheering" />
-        <img src="https://assets.codepen.io/1506195/unsplash-music-2.avif" alt="crowd cheering" />
-        <img src="https://assets.codepen.io/1506195/unsplash-music-3.avif" alt="singer performing" />
-        <img src="https://assets.codepen.io/1506195/unsplash-music-4.avif" alt="singer fistbumping crowd" />
-        <img src="https://assets.codepen.io/1506195/unsplash-music-5.avif" alt="man with a guitar singing" />
-        <img src="https://assets.codepen.io/1506195/unsplash-music-5.avif" alt="man with a guitar singing" />
-
-      </article>
+      
 
 
 
-
-      </div>
+    
       <br><br><br><br><br>
 
       <!--FAQ Section-->
@@ -663,6 +592,8 @@
 
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
 </body>
 

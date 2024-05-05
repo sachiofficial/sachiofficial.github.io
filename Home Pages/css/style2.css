@@ -25,6 +25,7 @@ a{
     height: 100%;
     position: absolute;
     inset: 0 0 0 0;
+    
 }
 .carousel .list .item img{
     width: 100%;
@@ -42,18 +43,38 @@ a{
     box-sizing: border-box;
     color: #fff;
     text-shadow: 0 5px 10px #0004;
+
 }
-.carousel .list .item .author{
+.carousel .list .item .author,.author103{
     font-weight: bold;
     letter-spacing: 10px;
 }
+
+@media(max-width:768px){
+    .carousel .list .item .author103{
+    letter-spacing: 4px;
+
+    }
+}
+
 .carousel .list .item .title102,
-.carousel .list .item .topic{
+.carousel .list .item .topic,
+.carousel .list .item .topic103{
     font-size: 5em;
     font-weight: bold;
     line-height: 1.3em;
+    
 }
-.carousel .list .item .topic{
+
+@media(max-width:768px){
+    .carousel .list .item .topic103{
+        font-size: 4.3em;
+
+    }
+}
+
+.carousel .list .item .topic,
+.carousel .list .item .topic103{
     color: #f1683a;
 }
 .carousel .list .item .buttons{
@@ -75,8 +96,11 @@ a{
     border: 1px solid #fff;
     color: #eee;
 }
+
+
 /* thumbail */
-.thumbnail{
+
+.thumbnail {
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -84,13 +108,44 @@ a{
     z-index: 100;
     display: flex;
     gap: 20px;
-}
-.thumbnail .item{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .thumbnail.fade-on-scroll {
+    opacity: 1; 
+  }
+  
+  .thumbnail .item {
     width: 150px;
     height: 220px;
     flex-shrink: 0;
     position: relative;
-}
+  }
+  
+
+.fade-on-scroll .thumbnail{
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .thumbnail {
+    opacity: 1; 
+  }
+  
+  .thumbnail.fade-on-scroll {
+    opacity: 0; 
+  }
+    
+  .fade-on-scroll .arrows{
+    transition: opacity 0.0s ease-in-out;
+  }
+  .arrows {
+    opacity: 1; 
+  }
+  
+  .arrows.fade-on-scroll {
+    opacity: 0; 
+  }
 
 @media (max-width: 768px) {
 
@@ -169,8 +224,10 @@ a{
 /* animation text in first item */
 
 .carousel .list .item:nth-child(1) .content .author,
+.carousel .list .item:nth-child(1) .content .author103,
 .carousel .list .item:nth-child(1) .content .title102,
 .carousel .list .item:nth-child(1) .content .topic,
+.carousel .list .item:nth-child(1) .content .topic103,
 .carousel .list .item:nth-child(1) .content .des,
 .carousel .list .item:nth-child(1) .content .buttons
 {
@@ -189,7 +246,8 @@ a{
 .carousel .list .item:nth-child(1) .content .title102{
     animation-delay: 1.2s!important;
 }
-.carousel .list .item:nth-child(1) .content .topic{
+.carousel .list .item:nth-child(1) .content .topic,
+.carousel .list .item:nth-child(1) .content .topic103{
     animation-delay: 1.4s!important;
 }
 .carousel .list .item:nth-child(1) .content .des{
@@ -296,8 +354,10 @@ a{
     pointer-events: none;
 }
 .carousel.prev .list .item:nth-child(2) .content .author,
+.carousel.prev .list .item:nth-child(2) .content .author103,
 .carousel.prev .list .item:nth-child(2) .content .title102,
 .carousel.prev .list .item:nth-child(2) .content .topic,
+.carousel.prev .list .item:nth-child(2) .content .topic103,
 .carousel.prev .list .item:nth-child(2) .content .des,
 .carousel.prev .list .item:nth-child(2) .content .buttons
 {
@@ -320,73 +380,32 @@ a{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .gallery {
-    --size: 100px;
-    display: grid;
-    grid-template-columns: repeat(8, var(--size));
-   grid-template-rows:repeat(10, var(--size));
-    margin-bottom: var(--size);
-    place-items: start center;
-    justify-content: center;
-    gap: 5px;
-
-    
-    &:has(:hover) img:not(:hover),
-    &:has(:focus) img:not(:focus){
-      filter: brightness(0.5) contrast(1);
-    }
+.fade-container {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
   
-    & img {
-      object-fit: cover;
-      width: calc(var(--size) * 2);
-      height: calc(var(--size) * 2);
-      clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z");
-      transition: clip-path 0.25s, filter 0.75s;
-      grid-column: auto / span 2;
-      border-radius: 5px;
+  .fade-container.in-view {
+    opacity: 1;
+  }
   
-      &:nth-child(6n-1) { 
-        grid-column: 2 / span 2
-      }
+
+
+  .fade-in-scroll {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+  }
   
-      &:hover,
-      &:focus {
-        clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
-        z-index: 1;
-        transition: clip-path 0.25s, filter 0.25s;
-      }
-      
-      &:focus {
-        outline: 1px dashed black;
-        outline-offset: -5px;
-      }
-    }
+
+
+
+  .image-human {
+    opacity: 0;
+    transition: opacity 3s ease-out;
+  }
+  
+  /* Class to be added on scroll */
+  .image-visible {
+    opacity: 1;
   }
   
