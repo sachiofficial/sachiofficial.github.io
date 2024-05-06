@@ -382,11 +382,13 @@ a{
 
 .fade-container {
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
+    scale: 0.5;
   }
   
   .fade-container.in-view {
     opacity: 1;
+    scale: 1;
   }
   
 
@@ -401,11 +403,13 @@ a{
 
   .image-human {
     opacity: 0;
-    transition: opacity 3s ease-out;
+    scale: 0.8;
+    transition: opacity 2s ease-out;
   }
   
   /* Class to be added on scroll */
   .image-visible {
     opacity: 1;
+    scale: 1;
   }
   

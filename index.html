@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <!-- MetaData -->
 
@@ -592,11 +592,24 @@
 
       <script src="Home Pages/js/script.js"></script>
       <script src="script.js"></script>
+
+      <!--Loading screen-->
+
       <script>
         window.addEventListener("load", function () {
           const loadingScreen = document.getElementById("loading-screen");
           loadingScreen.style.display = "none";
         });
+      </script>
+
+      <!--Go top when refesh-->
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+          window.scrollTo(0, 0);
+      });
+
       </script>
 
 

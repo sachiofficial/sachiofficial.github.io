@@ -63,24 +63,7 @@ window.addEventListener('scroll', function() {
   });
 
 
-
-
-  document.addEventListener('DOMContentLoaded', (event) => {
-    window.addEventListener('scroll', () => {
-      const image = document.querySelector('.image-human');
-      const position = image.getBoundingClientRect();
-  
-      // Check if the image is within the viewport
-      if(position.top < window.innerHeight && position.bottom >= 0) {
-        image.classList.add('image-visible');
-      } else {
-        image.classList.remove('image-visible');
-      }
-    });
-  });
-  
-  
-window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function() {
     const threshold = 400; 
     const thumbnail = document.querySelector('.arrows');
   
@@ -93,15 +76,32 @@ window.addEventListener('scroll', function() {
 
 
 
-const targetElement = document.getElementById('my-paragraph');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      targetElement.parentElement.classList.add('in-view');
-    }
-  });
-}, { threshold: 0.5 });
 
-observer.observe(targetElement);
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+    let hasAnimated = false;
+  
+    window.addEventListener('scroll', () => {
+      const image = document.querySelector('.image-human');
+      const position = image.getBoundingClientRect();
+      const threshold = 0.7; 
+  
+      if (position.top < window.innerHeight * threshold && position.bottom >= 0 && !hasAnimated) {
+        image.classList.add('image-visible');
+        hasAnimated = true;
+      }
+    });
+  });
+  
+    const targetElement = document.getElementById('my-paragraph');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          targetElement.parentElement.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(targetElement);
 
 
