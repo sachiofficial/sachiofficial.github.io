@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     margin: 0;
-    background-color: #000;
     color: #eee;
     font-family: Poppins;
     font-size: 12px;
+    overflow-x: hidden;
+    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/arrow-pointer-solid.svg'), auto;
+
 }
 
 a{
     text-decoration: none;
+
+}
+
+button,a,li{
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
+
 }
 .carousel{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     position: relative;
     display: block;
@@ -193,6 +201,7 @@ a{
     position: absolute;
     top: 80%;
     right: 57%;
+    
     z-index: 100;
     width: 300px;
     max-width: 30%;
@@ -338,8 +347,6 @@ a{
 }
 
 
-/* prev click */
-
 .carousel.prev .list .item:nth-child(2){
     z-index: 2;
 }
@@ -397,36 +404,346 @@ a{
     }
 }
 
-.fade-container {
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
-    scale: 0.5;
-  }
-  
-  .fade-container.in-view {
-    opacity: 1;
-    scale: 1;
-  }
-  
 
 
-  .fade-in-scroll {
-    opacity: 0;
-    transition: opacity 0.6s ease-out;
-  }
-  
-
-
+/* image scroll animation */
 
   .image-human {
     opacity: 0;
-    scale: 0.8;
     transition: opacity 2s ease-out;
   }
   
-  /* Class to be added on scroll */
   .image-visible {
     opacity: 1;
-    scale: 1;
   }
   
+  .scroll-element {
+    transform: scale(0);
+    transition: all 0.5s;
+
+  }
+
+  .scroll-element.visible {
+    transform: scale(1);
+    
+  }
+
+  .scroll-element2 {
+    transform: scale(0);
+    transition: all 0.5s;
+
+  }
+  .scroll-element2.visible {
+    transform: scale(1);
+
+  }
+  .scroll-element3 {
+    transform:translateX(-130px);
+    transition: all 2s;
+
+  }
+  .scroll-element3.visible {
+    transform:translateX(0px);
+
+  }
+  .scroll-element4 {
+    transform:translateX(-160px);
+    transition: all 2s;
+
+  }
+  .scroll-element4.visible {
+    transform:translateX(0px);
+
+  }
+  .scroll-element5 {
+    transform:translateX(-190px);
+    transition: all 2s;
+
+  }
+  .scroll-element5.visible {
+    transform:translateX(0px);
+
+  }
+
+
+
+
+/* background images */
+
+  .backImg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 150lvh;
+    left: 0;
+    margin-top: -100px;
+
+  }
+
+  
+  @media (max-width :768px){
+    .backImg {
+        position: absolute;
+        z-index: -1;
+        width: auto;
+        height: 330lvh;
+        left: 0;
+        margin-top: -20px;
+
+    
+      }
+
+  }
+
+  .selection{
+    background-color: #000000;
+
+  }
+  .selection2{
+    /* background-image: url("C:/Users/sachi/Desktop/sachiofficial.github.io/image/selection1.png");
+    background-size: cover;
+    background-position: center; */
+    background-color: #000000;
+
+  }
+  .selection3{
+    /* background-image: url("C:/Users/sachi/Desktop/sachiofficial.github.io/image/selection3.png");
+    background-size: cover;
+    background-position: center; */
+    background-color: #000000;
+
+  }
+  .selection4{
+    /* background-image: url("C:/Users/sachi/Desktop/sachiofficial.github.io/image/selection2.png");
+    background-size: cover;
+    background-position: center; */
+    background-color: #000000;
+  }
+  .selection5{
+    /* background-image: url("C:/Users/sachi/Desktop/sachiofficial.github.io/image/selection3.png");
+    background-size: cover;
+    background-position: center; */
+    background-color: #000000;
+  }
+
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+
+
+
+.loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #000000, #191c1d, #06141a);
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #191654;
+}
+
+#svg {
+  height: 150px;
+  width: 150px;
+  stroke: white;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 18s ease;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.name-container {
+  height: 30px;
+  overflow: hidden;
+}
+
+.logo-name {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+.container103 {
+  width: 95% !important;
+  padding: 0 !important;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 992px) and (max-width: 1439px) {
+    max-width: 1279px !important;
+    padding: 0 !important;
+    margin: 0 80px !important;
+    width: auto !important;
+  }
+
+  @media screen and (max-width: 991px) {
+    max-width: 959px !important;
+    margin: 0 16px !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
+}
+
+.gradient-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  padding: 30px;
+  @media screen and (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container-title {
+  text-align: center;
+  padding: 0 !important;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.card104 {
+  max-width: 800px;
+  border: 0;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.container-card {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background-clip: padding-box;
+  border-radius: 45px;
+  border-color:rgb(255, 166, 0); 
+  padding: 40px;
+  img {
+    margin-bottom: 32px;
+  }
+}
+
+.bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+  position: relative;
+}
+
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-blue-box::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+
+.bg-green-box::after {
+  background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+}
+
+.bg-white-box::after {
+  background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+}
+
+.bg-yellow-box::after {
+  background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+}
+
+.bg-blue-box::after {
+  background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+}
+
+.card-title {
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  font-style: normal;
+  font-size: 28px;
+  padding-bottom: 8px;
+}
+
+.card-description {
+  font-weight: 600;
+  line-height: 32px;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 16px;
+  max-width: 470px;
+}
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+.btn--neon {
+  position: relative;
+  padding: 12px 36px;
+  margin: 10px auto;
+  color: #ff0000;
+  font-size: 10px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 45px;
+  color: #ff0000;
+  transition: 0.5s;
+  filter: hue-rotate(290deg);
+  background: #ffffff;
+  color: #050801;
+  width: 68%;
+  white-space: nowrap; 
+
+}
+
+.btn--neon:hover{
+  box-shadow: 0 0 2px #03e9f4, 0 0 50px #03e9f4, 0 0 10px #03e9f4, 0 0 35px #03e9f4;
+  background: #03e9f4;
+}
+
+
+
+

@@ -75,33 +75,106 @@ window.addEventListener('scroll', function() {
   });
 
 
+  window.addEventListener('scroll', () => {
+    const image = document.querySelector('.image-human');
+    const position = image.getBoundingClientRect();
+    const threshold = 0.7;
 
-
-
-  document.addEventListener('DOMContentLoaded', (event) => {
-    let hasAnimated = false;
-  
-    window.addEventListener('scroll', () => {
-      const image = document.querySelector('.image-human');
-      const position = image.getBoundingClientRect();
-      const threshold = 0.7; 
-  
-      if (position.top < window.innerHeight * threshold && position.bottom >= 0 && !hasAnimated) {
+    if (position.top < window.innerHeight * threshold && position.bottom >= 0) {
         image.classList.add('image-visible');
-        hasAnimated = true;
       }
     });
-  });
-  
-    const targetElement = document.getElementById('my-paragraph');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          targetElement.parentElement.classList.add('in-view');
-        }
-      });
-    }, { threshold: 0.5 });
 
-    observer.observe(targetElement);
+    window. addEventListener('scroll', function () {
+      var element = document.querySelector('.scroll-element')
+      var position = element.getBoundingClientRect ()
+      
+      if (position.top < window.innerHeight && position.bottom >= 0){
+      element.classList.add('visible')
+      
+      }
+    });
+
+    window. addEventListener('scroll', function () {
+      var element = document.querySelector('.scroll-element2')
+      var position = element.getBoundingClientRect ()
+      
+      if (position.top < window.innerHeight && position.bottom >= 0){
+      element.classList.add('visible')
+
+      }
+    });
+
+    window. addEventListener('scroll', function () {
+      var element = document.querySelector('.scroll-element3')
+      var position = element.getBoundingClientRect ()
+      
+      if (position.top < window.innerHeight && position.bottom >= 0){
+      element.classList.add('visible')
+
+      }
+    });
+
+    window. addEventListener('scroll', function () {
+      var element = document.querySelector('.scroll-element4')
+      var position = element.getBoundingClientRect ()
+      
+      if (position.top < window.innerHeight && position.bottom >= 0){
+      element.classList.add('visible')
+
+      }
+    });
+
+    window. addEventListener('scroll', function () {
+      var element = document.querySelector('.scroll-element5')
+      var position = element.getBoundingClientRect ()
+      
+      if (position.top < window.innerHeight && position.bottom >= 0){
+      element.classList.add('visible')
+
+      }
+    });
 
 
+
+
+
+
+
+
+    gsap.fromTo(
+      ".loading-page",
+      { opacity: 1 },
+      {
+        opacity: 0,
+        display: "none",
+        duration: 1.5,
+        delay: 3.5,
+      }
+    );
+    
+    gsap.fromTo(
+      ".logo-name",
+      {
+        y: 50,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 2,
+        delay: 0.5,
+      }
+    );
+    
+
+    
+
+
+
+
+
+
+
+
+    

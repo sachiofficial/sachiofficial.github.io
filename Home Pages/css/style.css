@@ -109,7 +109,7 @@ input {
   outline: none;
 }
 
-button { cursor: pointer; }
+button {   cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto; }
 
 ion-icon { pointer-events: none; }
 
@@ -935,7 +935,7 @@ text-transform: capitalize;
 margin-bottom: 10px;
 letter-spacing: 2px;
 font-family: 'Young Serif';
-cursor: pointer;
+cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 }
 .span-102{
 color: #ff0000;
@@ -957,7 +957,6 @@ color: #ff0000;
 font-family: 'Arial Rounded MT Bold', sans-serif;
 font-size: 20px;
 border-radius: 70px;
-cursor: pointer;
 transition: background 0.3s ease, color 0.3s ease;
 
 }
@@ -1034,7 +1033,7 @@ transform: scale(1.2);
   font-family: 'Young Serif';
   text-align: center;
   margin-top: -20px;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
   }
   span{
@@ -1060,7 +1059,6 @@ transform: scale(1.2);
   color: #ff0000;
   font-size: 20px;
   border-radius: 70px;
-  cursor: pointer;
   margin: 0 auto;
   font-family: 'Arial Rounded MT Bold', sans-serif;
   transition: background 0.3s ease, color 0.3s ease;
@@ -1141,7 +1139,7 @@ transform: scale(1.2);
     font-family: 'Young Serif';
     text-align: center;
     margin-top: -20px;
-    cursor: pointer;
+    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   
     }
   span{
@@ -1168,7 +1166,6 @@ transform: scale(1.2);
   font-family: 'Arial Rounded MT Bold', sans-serif;
   font-size: 20px;
   border-radius: 70px;
-  cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
   margin: 0 auto;
 
@@ -1498,7 +1495,6 @@ transform: scale(1.2);
 
 
 
-
 /*------------------- BOX -------------------*/
 
 .container23 {
@@ -1532,45 +1528,6 @@ transform: scale(1.2);
   font-size: 18px;
   margin: 25px;
   text-align: center;
-}
-
-.box button {
-  width: 75%;
-  height: 50%;  
-  margin-left: auto;
-  margin-right:auto;
-  display:block;
-  color: #000000;
-  background: gold;
-  border-radius: 70px;
-  padding: 10px 25px;
-  font-family: 'Oswald';
-  font-weight: 500;
-  margin-bottom: 20px;
-  cursor: pointer;
-  outline: none;
-  perspective: 1000px;
-  transition: transform 0.3s ease;
-  transform-style: preserve-3d;
-}
-
-.box button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateZ(-10px);
-  border-radius: 10px;
-}
-
-.box button:hover {
-  transform: translateY(-3px) rotateX(10deg);
-}
-
-.box button:active {
-  transform: translateY(1px);
 }
 
 /*------------------- Optimized for pc screen -------------------*/
@@ -1607,13 +1564,14 @@ transform: scale(1.2);
 @media (max-width: 1199px) and (min-width: 768px) {
 
   .container23 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-content: space-around;
   }
+
   
   .box {
-    width: 29%;
+    width: 90%;
     height: auto;
     border: 2px solid #44ff00; 
     margin: 15px;
@@ -1659,125 +1617,6 @@ transform: scale(1.2);
 
 
 
-
-
-
-
-/*------------------- Image Gallary -------------------*/
-
-.h9{
-  font-family: 'Roboto Slab';
-  font-size: 50px;
-  color: rgb(172, 177, 202); 
-  text-shadow: #0dff00;
-  text-align: center;
-
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 100px;
-  margin: 70px;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  transition: transform 1s ease;
-  border-radius: 28px;
-}
-
-.gallery img:hover {
-  transform: scale(1.10);
-  cursor: pointer;
-  box-shadow: 0 0 15px rgb(255, 179, 0);
-}
-
-/*------------------- Optimized for pc screen -------------------*/
-
-@media (min-width: 1200px) {
-
-.h9{
-  font-family: 'Roboto Slab';
-  font-size: 50px;
-  color: rgb(172, 177, 202); 
-  text-shadow: #0dff00;
-  text-align: center;
-
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
-  grid-gap: 5%;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  transition: transform 1s ease;
-  border-radius: 28px;
-  margin-bottom: 40px;
-}
-
-.gallery img:hover {
-  transform: scale(1.10);
-  cursor: pointer;
-  box-shadow: 0 0 15px rgb(255, 179, 0);
-}
-}
-
-/*------------------- Optimized for tablat screen -------------------*/
-
-@media (max-width: 1199px) and (min-width: 768px) {
-  .h9 {
-    font-family: 'Roboto Slab';
-    font-size: 50px;
-    color: rgb(172, 177, 202);
-    text-shadow: #0dff00;
-    text-align: center;
-  }
-
-  .gallery {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(2, 48%); 
-    grid-gap: 8%;
-    margin-bottom: 80px;
-  }
-
-  .gallery img {
-    width: 100%;
-    height: auto;
-    transition: transform 1s ease;
-    border-radius: 28px;
-  }
-
-  .gallery img:hover {
-    transform: scale(1.10);
-    cursor: pointer;
-    box-shadow: 0 0 15px rgb(255, 179, 0);
-  }
-  .gallery img.hidden {
-    display: none;
-  }
-}
-
-/*------------------- Optimized for mobile screen -------------------*/
-
-  @media (max-width: 768px) {
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 60px;
-      margin: 40px;
-    }
-  
-    .gallery img.hidden {
-      display: none;
-    }
-  }
   
 /*------------------- FAQ -------------------*/
 
@@ -1810,7 +1649,7 @@ transform: scale(1.2);
   padding: 10px;
   font-size: 18px;
   font-weight: 500;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 }
 
 .according li label::before {
@@ -1881,7 +1720,7 @@ input[type="radio"]:checked + label::before {
     padding: 10px;
     font-size: 18px;
     font-weight: 500;
-    cursor: pointer;
+    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   }
   
   .according li label::before {
@@ -1954,7 +1793,7 @@ input[type="radio"]:checked + label::before {
     padding: 10px;
     font-size: 18px;
     font-weight: 500;
-    cursor: pointer;
+    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   }
   
   .according li label::before {
@@ -2027,7 +1866,7 @@ input[type="radio"]:checked + label::before {
     padding: 10px;
     font-size: 18px;
     font-weight: 500;
-    cursor: pointer;
+    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   }
   
   .according li label::before {
@@ -2119,7 +1958,7 @@ input[type="radio"]:checked + label::before {
   backdrop-filter: blur(0.75vw);
   background-color: rgba(255, 255, 255, 0.06);
   border-radius: 1vw;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   transition: background-color 250ms;
   width: calc(25% - clamp(0px, 0.8vw, 20px));
 }
@@ -2191,7 +2030,7 @@ input[type="radio"]:checked + label::before {
   backdrop-filter: blur(0.75vw);
   background-color: rgba(255, 255, 255, 0.06);
   border-radius: 1vw;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   transition: background-color 250ms;
   width: calc(25% - clamp(0px, 0.8vw, 20px));
 }
@@ -2265,7 +2104,7 @@ input[type="radio"]:checked + label::before {
     backdrop-filter: blur(0.75vw);
     background-color: rgba(255, 255, 255, 0.06);
     border-radius: 1vw;
-    cursor: pointer;
+    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
     transition: background-color 250ms;
     width: 40%;
   }
@@ -2340,7 +2179,7 @@ input[type="radio"]:checked + label::before {
     backdrop-filter: blur(0.75vw);
     background-color: rgba(255, 255, 255, 0.06);
     border-radius: 1vw;
-    cursor: pointer;
+    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
     transition: background-color 250ms;
     width: 48%; 
     display: flex;
@@ -2460,7 +2299,7 @@ footer{
 .email-id{
   width: fit-content;
   margin: 20px 0;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 .email-id a{
@@ -2503,7 +2342,7 @@ form button{
   background: transparent;
   border: 0;
   outline: none;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 form button .fa-solid{
@@ -2519,7 +2358,7 @@ form button .fa-solid{
   font-size: 20px;
   color: #000000;
   background: #000000;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 hr{
@@ -2596,7 +2435,7 @@ hr{
 .email-id{
   width: fit-content;
   margin: 20px 0;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 .email-id a{
@@ -2639,7 +2478,7 @@ form button{
   background: transparent;
   border: 0;
   outline: none;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 form button .fa-solid{
@@ -2658,7 +2497,7 @@ form button .fa-solid{
   margin-top: -50px;
   margin-left: 6.5%;
   margin-right: 0%;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   text-align: center;
 
 }
@@ -2747,7 +2586,7 @@ hr{
 .email-id{
   width: fit-content;
   margin: 20px 0;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 .email-id a{
@@ -2793,7 +2632,7 @@ form button{
   background: transparent;
   border: 0;
   outline: none;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 form button .fa-solid{
@@ -2811,7 +2650,7 @@ form button .fa-solid{
   background: #000000;
   margin-left: 2%;
   margin-right: 15%;
-  cursor: pointer;
+  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   text-align: center;
 
 }
@@ -2879,7 +2718,7 @@ hr{
     color: #000000;
     background: #000000;
     margin-left: 10%;
-    cursor: pointer;
+    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   
   }
 
