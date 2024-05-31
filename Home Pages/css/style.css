@@ -7,8 +7,8 @@
   --text-white: hsla(0, 0%, 100%, 1);
   --text-alice-blue: hsla(216, 100%, 95%, 1);
   --text-columbia-blue: hsla(199, 69%, 84%, 1);
-  --text-wild-blue-yonder: rgb(0, 255, 128);
-  --text-carolina-blue: rgb(255, 255, 255);
+  --text-wild-blue-yonder: hsla(216, 33%, 68%, 1);
+  --text-carolina-blue: hsla(199, 89%, 49%, 1);
   --text-shadow-blue: hsla(217, 24%, 59%, 1);
   --text-slate-gray: hsla(217, 17%, 48%, 1);
   --gradient-1: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
@@ -51,7 +51,6 @@
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
 
 }
-
 /*-------------- RESET ---------------------*/
 
 
@@ -432,9 +431,9 @@ body.nav-active { overflow: hidden; }
   border-block-end: 1px solid var(--border-prussian-blue);
 }
 a.active {
-  color: lightgreen;
+  color: hsla(199, 89%, 49%, 1);
   font-family: 'Teko';
-  font-size: 25px;
+  font-size: 24px;
   margin-top: 9px;
 
 }
