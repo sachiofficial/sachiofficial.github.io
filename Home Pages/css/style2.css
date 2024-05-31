@@ -5,9 +5,10 @@ body{
     font-family: Poppins;
     font-size: 12px;
     overflow-x: hidden;
-    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/arrow-pointer-solid.svg'), auto;
 
 }
+
+*::selection { background: none; color: rgb(0, 255, 72); }
 
 a{
     text-decoration: none;
@@ -15,9 +16,41 @@ a{
 }
 
 button,a,li{
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
+  cursor: none;
 
 }
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff0000; 
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out, border-color 0.3s ease;
+  z-index: 9999; 
+}
+
+.hovered {
+  border-color: #00ff00; 
+
+}
+
+@media (max-width:768px){
+  .cursor{
+    display: none;
+  }
+}
+
+.body-entier{
+  cursor: none;
+}
+
+.cursor-chatbot {
+  cursor: pointer;
+}
+
 .carousel{
     height: 100vh;
     width: 100%;
@@ -94,15 +127,18 @@ button,a,li{
 }
 .carousel .list .item .buttons button{
     border: none;
-    background-color: #ff0000;
+    background-color: GhostWhite;
     letter-spacing: 3px;
-    font-family: Poppins;
+    font-family: 'Kanit';
     font-weight: 500;
+    border-radius: 100px;
+    color: #000;
 }
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 2px solid GhostWhite;
     color: #eee;
+    font-family: 'Kanit';
 }
 
 
@@ -113,7 +149,7 @@ button,a,li{
     bottom: 50px;
     left: 50%;
     width: max-content;
-    z-index: 100;
+    z-index: 10;
     display: flex;
     gap: 20px;
     opacity: 0;
@@ -201,8 +237,7 @@ button,a,li{
     position: absolute;
     top: 80%;
     right: 57%;
-    
-    z-index: 100;
+    z-index: 10;
     width: 300px;
     max-width: 30%;
     display: flex;
@@ -404,68 +439,21 @@ button,a,li{
     }
 }
 
+.des p{
+  font-family: 'Radio Canada Big';
+  font-size: 13px;
+}
 
-
-/* image scroll animation */
-
-  .image-human {
-    opacity: 0;
-    transition: opacity 2s ease-out;
+@media (max-width:768px){
+  .des p{
+    font-size: 12px;
   }
-  
-  .image-visible {
-    opacity: 1;
-  }
-  
-  .scroll-element {
-    transform: scale(0);
-    transition: all 0.5s;
+}
 
-  }
-
-  .scroll-element.visible {
-    transform: scale(1);
-    
-  }
-
-  .scroll-element2 {
-    transform: scale(0);
-    transition: all 0.5s;
-
-  }
-  .scroll-element2.visible {
-    transform: scale(1);
-
-  }
-  .scroll-element3 {
-    transform:translateX(-130px);
-    transition: all 2s;
-
-  }
-  .scroll-element3.visible {
-    transform:translateX(0px);
-
-  }
-  .scroll-element4 {
-    transform:translateX(-160px);
-    transition: all 2s;
-
-  }
-  .scroll-element4.visible {
-    transform:translateX(0px);
-
-  }
-  .scroll-element5 {
-    transform:translateX(-190px);
-    transition: all 2s;
-
-  }
-  .scroll-element5.visible {
-    transform:translateX(0px);
-
-  }
-
-
+.buttons button{
+  font-family: 'Poetsen One';
+  font-size: 14px;
+}
 
 
 /* background images */
@@ -583,14 +571,6 @@ button,a,li{
 }
 
 
-
-
-
-
-
-
-
-
 .container103 {
   width: 95% !important;
   padding: 0 !important;
@@ -642,10 +622,11 @@ button,a,li{
 .container-card {
   position: relative;
   border: 2px solid transparent;
-  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background: black;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   background-clip: padding-box;
   border-radius: 45px;
-  border-color:rgb(255, 166, 0); 
+
   padding: 40px;
   img {
     margin-bottom: 32px;
@@ -702,13 +683,10 @@ button,a,li{
 .card-description {
   font-weight: 600;
   line-height: 32px;
-  color: hsla(0, 0%, 100%, 0.5);
+  color: AliceBlue;
   font-size: 16px;
   max-width: 470px;
 }
-
-
-
 
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
@@ -717,8 +695,7 @@ button,a,li{
   position: relative;
   padding: 12px 36px;
   margin: 10px auto;
-  color: #ff0000;
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 2px;
   border-radius: 5px;
   outline: none;
@@ -729,21 +706,39 @@ button,a,li{
   margin-left: auto;
   margin-right: auto;
   border-radius: 45px;
-  color: #ff0000;
   transition: 0.5s;
-  filter: hue-rotate(290deg);
-  background: #ffffff;
+  background: #00ff00;
   color: #050801;
   width: 68%;
-  white-space: nowrap; 
+  white-space: nowrap;
+  margin-bottom: 20px;
+  font-family: 'Poetsen One';
+  font-weight: 400;
+  box-shadow: rgb(114, 114, 114) 0px 0px 10px 5px inset;
+}
+
+.btn--neon:hover {
+  background-color: #e1ff00;
+}
+
+
+.chatnew {
+  width: 62px;
+  height: 62px;
+  position: fixed;
+  z-index: 100;
+  right: 80px;
+  bottom: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 
 }
 
-.btn--neon:hover{
-  box-shadow: 0 0 2px #03e9f4, 0 0 50px #03e9f4, 0 0 10px #03e9f4, 0 0 35px #03e9f4;
-  background: #03e9f4;
+
+@media (max-width:768px) {
+  .chatnew{
+    right: 17px;
+    bottom: 17px;
+
+  }
 }
-
-
-
-

@@ -52,6 +52,11 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Freeman&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
@@ -59,6 +64,7 @@
 
   <link rel="stylesheet" href="Home Pages/css/style.css">
   <link rel="stylesheet" href="Home Pages/css/style2.css">
+  <link rel="stylesheet" href="Home Pages/css/animations.css">
 
     <!-- Preload Images -->
 
@@ -70,8 +76,10 @@
   <!--Back to top-->
 
 <body id="top">
+  <div id="content154">
+    <div class="body-entier">
   
-  <div class="loading-page" id="loading-page">
+  <!-- <div class="loading-page" id="loading-page">
 
     <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
       
@@ -80,11 +88,11 @@
     <div class="name-container">
         <div class="logo-name">WELCOME</div>
     </div>
-</div>
+</div> -->
   
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+  <!-- <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
-  </a>
+  </a> -->
 
   <!-- Header -->
 
@@ -119,8 +127,8 @@
           </li>
 
           <li>
-            <a href="https://sachiofficial.github.io/image_gallery" class="navbar-link hover-1"
-              data-nav-toggler>Gallery</a>
+            <a href="https://sachiofficial.github.io/music" class="navbar-link hover-1"
+              data-nav-toggler>Music</a>
           </li>
 
           <li>
@@ -197,28 +205,26 @@
       </button>
 
     </div>
-  </header>
+  </header>   <div class="cursor"></div>
   <main>
+    <img src="Home Pages/images/Home Page/me.jpg" class="chatnew">
+    
       <!-- carousel -->
       <div class="carousel">
         <!-- list item -->
         <div class="list">
           <div class="item">
-            <img src="image/img1.jpg">
+            <img src="image/img1.jpg" id="chatbtn">
             <div class="content">
               <div class="author">WELCOME!</div>
               <div class="title102">WEB DESIGNER</div>
               <div class="topic">LAKSHAN</div>
               <div class="des">
-                <!-- lorem 50 -->
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
-                itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
-                doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut,
-                exercitationem eum aperiam illo illum laudantium?
+                <p>Welcome to my website! Sachintha Lakshan is a multi-faceted developer with expertise in web, mobile app creation, and content production. He leverages his technical skills to craft engaging web experiences and applications, while also sharing his knowledge through YouTube.</p>
               </div>
               <div class="buttons">
-                <button>SEE MORE</button>
-                <button>SUBSCRIBE</button>
+                <button>Learn More</button>
+                <button>Massege</button>
               </div>
             </div>
           </div>
@@ -229,14 +235,11 @@
               <div class="title102">NEXT MUSIC</div>
               <div class="topic103">SOFTWARE</div>
               <div class="des">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
-                itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
-                doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut,
-                exercitationem eum aperiam illo illum laudantium?
+                    <p>Elevate your everyday with Next Music! This dynamic app, created by Sachintha Lakshan, curates the perfect soundtrack for your life. Explore millions of songs, or let our personalized recommendations guide you. Dive into endless genres and moods, or create your own custom playlists. Next Music - where your next sonic adventure awaits.</p>
               </div>
               <div class="buttons">
                 <button>SEE MORE</button>
-                <button>SUBSCRIBE</button>
+                <button>Download</button>
               </div>
             </div>
           </div>
@@ -247,14 +250,11 @@
               <div class="title102">GENERATIVE AI</div>
               <div class="topic103">CHAT-GPT</div>
               <div class="des">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
-                itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
-                doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut,
-                exercitationem eum aperiam illo illum laudantium?
+                <p>Generative AI is a cutting-edge field of artificial intelligence focused on creating entirely new data. Unlike traditional AI that analyzes existing information, generative AI utilizes techniques like neural networks to produce realistic and original content. This includes generating text, images, music, and even 3D models, with applications ranging from creative design to scientific discovery.</p>
               </div>
               <div class="buttons">
                 <button>SEE MORE</button>
-                <button>SUBSCRIBE</button>
+                <button>Read More</button>
               </div>
             </div>
           </div>
@@ -265,10 +265,10 @@
             <img src="image/img1.jpg">
             <div class="content">
               <div class="title102">
-                Name Slider
+                About me
               </div>
               <div class="description">
-                Description
+                Describe me.
               </div>
             </div>
           </div>
@@ -276,10 +276,10 @@
             <img src="image/img2.jpg">
             <div class="content">
               <div class="title102">
-                Name Slider
+                Next Music
               </div>
               <div class="description">
-                Description
+               The Music App.
               </div>
             </div>
           </div>
@@ -287,10 +287,10 @@
             <img src="image/img3.jpg">
             <div class="content">
               <div class="title102">
-                Name Slider
+                Generative AI
               </div>
               <div class="description">
-                Description
+                What Is AI?
               </div>
             </div>
           </div>
@@ -308,15 +308,15 @@
 
 
       <!-- About Me -->
-      <div class="selection">
+      <div id="selection">
       <section class="about">
         <div class="main">
-          <img src="Home Pages/images/Home Page/Human.png" class="image-human scroll-element2">
+          <img src="Home Pages/images/Home Page/Human.png" class="image-human scroll-element1">
           <div class="about-text">
             <div class="scroll-element">
               <h1>About Me</h1>
               <h5>Who is <span class="span-102" style="display: inline;">Sachintha Lakshan</span></h5>
-              <p id="my-paragraph">Welcome to Sachintha Lakshan's website! In the tranquil town of Kandepiwala, Sri Lanka, you'll find me, Sachinta Lakshan, with a deep passion for web development and a presence on two active YouTube channels. Through my work, I strive to capture the beauty of life and convey it to my audience. Beyond the screen, I manage a carefully nurtured website where I explore the ever-changing wonders of our world in the digital age. My goal is to inform, inspire, and immerse you in the fascinating moments of our fast-paced world. Through my website, I provide insights and stories, offering a glimpse into the dynamic and multifaceted nature of The wonderful world of cyber.</p>
+              <p id="my-paragraph">Sachinta Lakshan, a resident of Kandepiwala Laggala, Sri Lanka, is not just a web designer.He is a digital designer who creates website that go beyond mere functionality. Sachinta's passion flows into his two excellent YouTube channels, where he brings you copyright-free music. But the journey does not end there. His attractively designed website acts as an ocean of knowledge sharing and also reveals the ever-evolving news of our digital age. I have created this with the aim to pique your curiosity, immerse you in our wonderful world, educate you and introduce you to our latest mobile apps. Prepare to be swept away by his captivating stories and explorations into the multifaceted wonder that is the world of cyber.</p>
       
               <button class="custom-btn2">Know more</button>
             </div>
@@ -328,9 +328,10 @@
       <br><br><br><br><br><br>
 
       <!--Social Media Links-->
-      <div class="selection2">
+      <div id="selection">
       <div class="body-15">
         <div class="content1">
+          <div class="scroll-element2">
           <h1 class="title">Follow us on social meadia
             <div class="aurora">
               <div class="aurora__item"></div>
@@ -338,10 +339,9 @@
               <div class="aurora__item"></div>
               <div class="aurora__item"></div>
             </div>
+          </div>
         </div>
         </h1>
-
-        <p class="subtitle-aurora">Stay conected with our comiunity.</p>
       </div>
       <br>
       <div class="container23">
@@ -349,16 +349,12 @@
         <div class="box">
           <br><br>
           <img src="Home Pages/images/Home Page/Facebook logo.png" alt="Your Image">
-          <p>Welcome to Sachintha Lakshan's Facebook, where we explore the captivating world of Facebook. Discover how
-            this social media giant has transformed the way we connect and share with loved ones. Uncover the latest
-            trends, tips, and tricks to enhance your Facebook experience. Whether you're a casual user or a social media
-            enthusiast, we've got you covered with essential insights and updates. Join us on this exciting journey
-            through the evolution of Facebook and its profound influence on modern communication skils.</p>
+          <p>Sachinta Lakshan's Facebook page is a place where you can get a lot of valuable knowledge. Also, this is the best place to get the latest trends, tricks, latest technical knowledge and technical information to improve your Facebook experience. Therefore, I believe that your Facebook experience will take you to a new dimension. Moreover, whether you are a user or a social media operator, we have you covered with essential insights and updates and join us on this exciting journey through its impact on modern communication skills.</p>
 
           <a href="https://web.facebook.com/SachinthaLakshanOfficial" target=”_blank”>
-            <button class="btn--neon"><b>
+            <button class="btn--neon">
               Know More                                
-            </b></button>
+            </button>
           </a>
         </div>
       </div>
@@ -366,16 +362,12 @@
         <div class="box">
           <br><br>
           <img src="Home Pages/images/Home Page/Youtube logo.png" alt="Your Image">
-          <p>Welcome to Sachintha Lakshan's YouTube channel, where we embark on an exciting and informative journey
-            through the captivating world of YouTube. Explore how this platform has revolutionized content creation and
-            consumption. Uncover the latest trends, tips, and tricks to enhance your YouTube experience. Whether you're
-            a video enthusiast or new to the platform, we've got you covered with essential insights and updates. Join
-            us as we explore the evolution of YouTube and its profound impact on modern digital culture.</p>
+          <p>We have two youtube channels Smart Gura and Smart Gura Music. Smart Gura analyzes the latest technical facts to develop your knowledge and Smart Gura Music YouTube Channel provides copyright free background music for your YouTube videos. Discover the latest trends, tips and tricks to improve your YouTube experience. Whether you're a video enthusiast or new to the platform, we've got you covered with essential insights and updates. Join us as we explore the evolution of YouTube and its profound impact on modern digital culture.</p>
 
           <a href="https://www.youtube.com/@sachintha_lakshan" target=”_blank”>
-            <button class="btn--neon"><b>
+            <button class="btn--neon">
               Know More                                
-            </b></button>
+            </button>
           </a>
         </div>
       </div>
@@ -383,44 +375,45 @@
         <div class="box">
           <br><br>
           <img src="Home Pages/images/Home Page/TikTok Logo.png" alt="Your Image">
-          <p>Welcome to Sachintha Lakshan's TikTok channel, where we immerse ourselves in the thrilling world of TikTok.
-            Discover how this platform has transformed the way we create and enjoy short-form videos. Unearth the latest
-            trends, tips, and tricks to enhance your TikTok entertainment and experience. Whether you're a content
-            creator or a social media enthusiast, we've got you covered with essential insights and updates. Join us on
-            a journey through the evolution of TikTok and it is profound influence on modern digital culture.</p>
+          <p>We hope to give you the fun, intriguing and technical experience you want on the Tiktok page. This Tiktok platform allows you to create 60 second and 30 second short format videos to enjoy and gain knowledge. We upload videos on this platform every three days and it must be said that the videos are created according to your wishes. Also our tiktok page is a place where you can get knowledge and entertainment. So don't forget to visit our tiktok page and follow us now to enhance your tiktok entertainment and experience.</p>
 
           <a href="https://www.tiktok.com/@sachintha_lakshan.tiktok" target=”_blank”>
-            <button class="btn--neon"><b>
+            <button class="btn--neon">
               Know More                                
-            </b></button>
+            </button>
           </a>
         </div>
       </div>
-
-
-      <br><br><br><br>
-      <br><br><br><br>
     </div>
+    </div>
+   
+
+      <br><br><br><br>
+      <br><br><br><br>
+
       <!-- Image Gallary -->
-      <div class="selection3">
-        <div class="body-15">
-          <div class="content1">
-            <h1 class="title">Do you Know me?
-              <div class="aurora">
-                <div class="aurora__item"></div>
-                <div class="aurora__item"></div>
-                <div class="aurora__item"></div>
-                <div class="aurora__item"></div>
+      <div class="selection">
+        <div class="body-150">
+          <div class="content1">          
+            <div class="scroll-element9">
+            <h1 class="title10"> About My Journey
+              <div class="aurora102">
+                <div class="aurora__item10"></div>
+                <div class="aurora__item10"></div>
+                <div class="aurora__item10"></div>
+                <div class="aurora__item10"></div>
               </div>
           </div>
-          </h1>
-  
-          <p class="subtitle-aurora">Stay conected with our comiunity.</p>
         </div>
+          </h1>
+      </div>
       </div>
 
       <div class="container103">
         <div class="gradient-cards">
+
+          <div class="scroll-element10">
+
           <div class="card104">
             <div class="container-card bg-green-box">
               <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -439,11 +432,14 @@
                   </radialGradient>
                 </defs>
               </svg>
-              <p class="card-title">Zero-cost Possibilities</p>
-              <p class="card-description">Hubble lets users borrow USDH for a one-time 0.5% fee. No variable rates. No interest charged, ever.</p>
+              <p class="card-title">From Zero to Hero</p>
+              <p class="card-description">My journey has not always been easy. Challenges tested me, but my dedication fueled my success.</p>
             </div>
           </div>
+        </div>
       
+    <div class="scroll-element12">
+
           <div class="card104">
             <div class="container-card bg-white-box">
               <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -467,11 +463,14 @@
                   </radialGradient>
                 </defs>
               </svg>
-              <p class="card-title">Multi-Asset Collateral</p>
-              <p class="card-description">Deposit a variety of assets on Hubble, raise your collateral ratio, and unlock the liquidity in your wallet.</p>
+              <p class="card-title">Learning Curve</p>
+              <p class="card-description">I am currently practicing and learning HTML, CSS, JS and other programming languages.</p>
             </div>
           </div>
-      
+        </div>
+
+          <div class="scroll-element11">
+
           <div class="card104">
             <div class="container-card bg-yellow-box">
               <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -489,11 +488,14 @@
                   </radialGradient>
                 </defs>
               </svg>
-              <p class="card-title">Get Yield on Deposits</p>
-              <p class="card-description">While your collateral is deposited, delegate it to earn the highest yield available in the Solana ecosystem.</p>
+              <p class="card-title">Challenges and Triumphs</p>
+              <p class="card-description">I have faced many challenges. The main challenge was to win the exams, but I managed them successfully.</p>
             </div>
           </div>
+        </div>
       
+        <div class="scroll-element13">
+
           <div class="card104">
             <div class="container-card bg-blue-box">
               <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -512,22 +514,22 @@
                   </radialGradient>
                 </defs>
               </svg>
-              <p class="card-title">Get up to 11x Leverage</p>
-              <p class="card-description">Hubble’s capital-efficient 110% collateral ratio lets users leverage up to 11x on their deposits.</p>
+              <p class="card-title">Unlocking Level Skills</p>
+              <p class="card-description">I have my skills in troubleshooting, Graphics design, video editing, web development and hacking.</p>
             </div>
           </div>
         </div>
       </div>
-
+    </div>
     
       <br><br><br><br><br>
 
       <!--FAQ Section-->
-      <div class="selection4">
+      <div class="selection">
       <selection>
-        <div class="h2-faq">Frequently Asked Questions</div>
+        <div class="h2-faq scroll-element14">Frequently Asked Questions</div>
         <ul class="according">
-          <li>
+          <li class="scroll-element15">
             <input type="radio" name="according" id="frist">
             <label for="frist">
               <div class="faq-main">What are you planning to do?</div>
@@ -539,7 +541,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="scroll-element16">
             <input type="radio" name="according" id="secound">
             <label for="secound">
               <div class="faq-main">What kind of awareness do you do on social media?</div>
@@ -551,22 +553,17 @@
             </div>
           </li>
 
-          <li>
+          <li class="scroll-element17">
             <input type="radio" name="according" id="third">
             <label for="third">
-              <div class="faq-main">Can I download images from your gallery and are there guidelines?</div>
+              <div class="faq-main">Do you recommend Next Music app or Cloud service to listen to songs?</div>
             </label>
             <div class="content">
-              <p>Absolutely, you have the green light to download images from our image gallery. We encourage you to
-                take your time, browse through our extensive collection, and pick out the ones that resonate with you
-                the most. We're delighted to share these visuals with you. Feel free to explore and save as many as you
-                desire – they're here for your enjoyment and use. If you have any questions or need further assistance,
-                please don't hesitate to reach out. Your satisfaction is our priority, and we hope you find the images
-                both inspiring and valuable for your needs. Enjoy your downloads! 😊</p>
+              <p>Level up your music game with this sweet combo! For your phone, grab a music app. Think of it as a pocket DJ – you can build playlists, blast your faves, and many even let you download songs for offline listening (perfect for those dead zones).  For your computer, cloud storage is your jam. Upload your whole music library and listen to anything, anytime, from any device. It's like having a secret stash of all your favorite albums, always accessible. This way, your music goes wherever you do, keeping the good vibes flowing no matter where life takes you. 😊</p>
             </div>
           </li>
 
-          <li>
+          <li class="scroll-element18">
             <input type="radio" name="according" id="fourth">
             <label for="fourth">
               <div class="faq-main">What's your age and where do you live?</div>
@@ -578,7 +575,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="scroll-element19">
             <input type="radio" name="according" id="five">
             <label for="five">
               <div class="faq-main">Can you help me solve problems?</div>
@@ -595,51 +592,50 @@
       </selection>
     </div>
       <!--Stay Connected Section-->
-      <div class="selection5">
-      <div class="h12"><b>Stay conected</b>
-      </div>
-      <br><br><br><br><br>
-
-      <div id="profiles">
-        <div class="profile">
-          <div class="profile-content">
-            <div class="profile-pic">
-              <img class="profile-pic-image" src="Home Pages/images/Home Page/dinusha.jpg" />
+      <div class="selection">
+        <div class="h12 scroll-element20"><b>Stay Conected</b>
+        </div>
+        <br><br><br><br><br>
+  
+        <div id="profiles">
+          <div class="profile scroll-element21">
+            <div class="profile-content">
+              <div class="profile-pic">
+                <img class="profile-pic-image" src="Home Pages/images/Home Page/fiverr.png" />
+              </div>
+              <h3 class="profile-name">Fiverr</h3>
             </div>
-            <h3 class="profile-name">DINUSHA</h3>
+          </div>
+
+          <div class="profile scroll-element22">
+            <div class="profile-content">
+              <div class="profile-pic">
+                <img class="profile-pic-image" src="Home Pages/images/Home Page/next-music.png" />
+              </div>
+              <h3 class="profile-name">Next Music</h3>
+            </div>
+          </div>
+
+          <div class="profile scroll-element23">
+            <div class="profile-content">
+              <div class="profile-pic">
+                <img class="profile-pic-image" src="Home Pages/images/Home Page/youtube-icon.png" />
+              </div>
+              <h3 class="profile-name">YouTube</h3>
+            </div>
+          </div>
+  
+          <div class="profile scroll-element24">
+            <div class="profile-content">
+              <div class="profile-pic">
+                <img class="profile-pic-image" src="Home Pages/images/Home Page/github-icon.png" />
+              </div>
+              <h3 class="profile-name ">Github</h3>
+            </div>
           </div>
         </div>
-
-        <div class="profile">
-          <div class="profile-content">
-            <div class="profile-pic">
-              <img class="profile-pic-image" src="Home Pages/images/Home Page/pasindu.jpg" />
-            </div>
-            <h3 class="profile-name">PASINDU</h3>
-          </div>
         </div>
-
-        <div class="profile">
-          <div class="profile-content">
-            <div class="profile-pic">
-              <img class="profile-pic-image" src="Home Pages/images/Home Page/kawishka.jpg" />
-            </div>
-            <h3 class="profile-name">KAWISHKA</h3>
-          </div>
-        </div>
-
-        <div class="profile">
-          <div class="profile-content">
-            <div class="profile-pic">
-              <img class="profile-pic-image" src="Home Pages/images/Home Page/anuja.jpg" />
-            </div>
-            <h3 class="profile-name ">ANUJA</h3>
-          </div>
-        </div>
-      </div>
-      </div>
-      <br><br><br>
-
+        <br><br><br>
       <!--Footer Section-->
 
       <footer>
@@ -698,11 +694,12 @@
         <hr>
         <p class="copyright">Sachintha Lakshan © 2023 - All Rights Reserved</p>
       </footer>
-
+</div>
+</div>
       <!--js links-->
 
       <script src="Home Pages/js/script.js"></script>
-      <script src="script.js"></script>
+      <script src="Home Pages/js/animations.js"></script>
 
       <!--Loading screen-->
 
@@ -720,6 +717,58 @@
         // Call the hideLoader function when the page finishes loading
         window.onload = hideLoader;
     </script>
+     <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+    <script>
+      function scrollToTop() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      resolve();
+    }, 100);
+  });
+}
+
+scrollToTop().then(() => {
+  console.log("Scrolling completed."); // Optional: Log success
+});
+
+    </script>
+
+<script>
+  (function (w, d, s, o, f, js, fjs) {
+          w[o] = w[o] || function () {
+              (w[o].q = w[o].q || []).push(arguments) };
+          js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+          js.id = o; js.src = f; js.async = 1;
+          fjs.parentNode.insertBefore(js, fjs) }
+      (window, document, 'script', 'nw', 'D:/widget.js'));
+          nw('init', {
+              apiKey: '2ace2d6c-a571-4ec7-9540-b0a2e62e3098',
+              serviceBaseUrl: 'https://api.norby.io',
+              lang: 'en',
+              languageList: ['EN','RU','EE','IT','FR','DE','UA','ES','FI','SV','DA','NO','PL','PT','TR','ZH','JA'],
+              mainColor: '#000000',
+              popupBotAvatarColor: '#000000',
+              multichat: false,
+              botName: 'Sachintha Lakshan',
+              imageTransferEnabled: true,
+              side: 'right',
+              marginSideDesktop: 80,
+              marginBottomDesktop: 48,
+              marginSideMobile: 16,
+              marginBottomMobile: 16
+          });
+      </script>
+
 
       <!--ionicon link-->
 

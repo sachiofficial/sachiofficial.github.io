@@ -7,8 +7,8 @@
   --text-white: hsla(0, 0%, 100%, 1);
   --text-alice-blue: hsla(216, 100%, 95%, 1);
   --text-columbia-blue: hsla(199, 69%, 84%, 1);
-  --text-wild-blue-yonder: hsla(216, 33%, 68%, 1);
-  --text-carolina-blue: hsla(199, 89%, 49%, 1);
+  --text-wild-blue-yonder: rgb(0, 255, 128);
+  --text-carolina-blue: rgb(255, 255, 255);
   --text-shadow-blue: hsla(217, 24%, 59%, 1);
   --text-slate-gray: hsla(217, 17%, 48%, 1);
   --gradient-1: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
@@ -109,7 +109,7 @@ input {
   outline: none;
 }
 
-button {   cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto; }
+button {   cursor: none; }
 
 ion-icon { pointer-events: none; }
 
@@ -373,7 +373,7 @@ body.nav-active { overflow: hidden; }
   width: 100%;
   padding-block: 10px;
   background-color: rgba(0, 0, 0, 0);
-  z-index: 4;
+  z-index: 100;
 }
 
 .header.active {
@@ -398,7 +398,7 @@ body.nav-active { overflow: hidden; }
 
 .nav-open-btn,
 .nav-close-btn {
-  color: var(--text-wild-blue-yonder);
+  color:red;
   font-size: 3.5rem;
 }
 
@@ -411,7 +411,7 @@ body.nav-active { overflow: hidden; }
   height: 100vh;
   background-color: black;
   padding: 30px;
-  z-index: 2;
+  z-index: 100;
   overflow-y: auto;
   visibility: hidden;
   transition: 0.25s var(--cubic-in);
@@ -432,9 +432,9 @@ body.nav-active { overflow: hidden; }
   border-block-end: 1px solid var(--border-prussian-blue);
 }
 a.active {
-  color: hsla(199, 89%, 49%, 1);
+  color: lightgreen;
   font-family: 'Teko';
-  font-size: 24px;
+  font-size: 25px;
   margin-top: 9px;
 
 }
@@ -442,7 +442,7 @@ a.active {
 .navbar-list { border-block-end: 1px solid var(--border-white-alpha-15); }
 
 .navbar-link {
-  color: var(--text-alice-blue);
+  color: greenyellow;
   font-weight: var(--weight-medium);
   padding-block: 10px;
   font-family: 'Teko';
@@ -923,19 +923,18 @@ a.active {
 
 }
 .about-text h1{
-color: #ffffff;
+color: MintCream;
 font-size: 80px;
 text-transform: capitalize;
 margin-bottom: 5px;
 }
 .about-text h5{
-color: #ffffff;
+color: Snow;
 font-size: 30px;
 text-transform: capitalize;
 margin-bottom: 10px;
 letter-spacing: 2px;
 font-family: 'Young Serif';
-cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 }
 .span-102{
 color: #ff0000;
@@ -1033,7 +1032,6 @@ transform: scale(1.2);
   font-family: 'Young Serif';
   text-align: center;
   margin-top: -20px;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
   }
   span{
@@ -1139,7 +1137,6 @@ transform: scale(1.2);
     font-family: 'Young Serif';
     text-align: center;
     margin-top: -20px;
-    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   
     }
   span{
@@ -1218,11 +1215,11 @@ transform: scale(1.2);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 
 :root {
-  --bg: black;
-  --clr-1: #0dff00;
-  --clr-2: #ffb300;
-  --clr-3: #ff0000;
-  --clr-4: #0029f8;
+  --bg1: black;
+  --clr-1: rgb(255, 0, 0);
+  --clr-2: rgb(60, 255, 0);
+  --clr-3: rgb(66, 218, 94);
+  --clr-4: rgb(255, 13, 207);
 
   --blur: 1rem;
   --fs: clamp(2rem, 7vw, 6rem);
@@ -1230,11 +1227,10 @@ transform: scale(1.2);
 }
 
 .body-15 {
-  
   display: grid;
   place-items: center;
-  background-color: var(--bg);
-  color: #ffffff;
+  background-color: var(--bg1);
+  color: #ffbb00;
   font-family: "Inter", "DM Sans", Arial, sans-serif;
 }
 
@@ -1255,72 +1251,10 @@ transform: scale(1.2);
   letter-spacing: var(--ls);
   position: relative;
   overflow: hidden;
-  background: var(--bg);
+  background: var(--bg1);
   margin: 0;
   font-family: 'Roboto Slab';
 }
-
-/*------------------- Optimized for pc screen -------------------*/
-
-.content1 {
-  text-align: center;
-}
-
-.title {
-  font-size: 85px;
-  font-weight: 100px;
-  letter-spacing: var(--ls);
-  position: relative;
-  overflow: hidden;
-  background: var(--bg);
-  margin: 0;
-  font-family: 'Roboto Slab';
-}
-
-/*------------------- Optimized for tablat screen -------------------*/
-
-@media (max-width: 1199px) and (min-width: 768px) {
-  .content1 {
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 70px;
-    font-weight: 100px;
-    letter-spacing: var(--ls);
-    position: relative;
-    overflow: hidden;
-    background: var(--bg);
-    margin-top: -110px;
-  }
-}
-
-/*------------------- Optimized for mobile screen -------------------*/
-
-@media (max-width: 768px) {
-  .content1 {
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 53px;
-    font-weight: 100px;
-    letter-spacing: var(--ls);
-    position: relative;
-    overflow: hidden;
-    background: var(--bg);
-    margin-top: -170px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-
- .subtitle-aurora {
-    font-size: 15px;
-    color: #ffd900;
-    margin-top: -140px;
-}
-
 .aurora {
   position: absolute;
   top: 0;
@@ -1487,6 +1421,40 @@ transform: scale(1.2);
 
 
 
+/*------------------- Optimized for tablat screen -------------------*/
+
+@media (max-width: 1199px) and (min-width: 768px) {
+
+  .title {
+    font-size: 70px;
+    font-weight: 100px;
+    letter-spacing: var(--ls);
+    position: relative;
+    overflow: hidden;
+    background: var(--bg1);
+    margin-top: -110px;
+  }
+}
+
+/*------------------- Optimized for mobile screen -------------------*/
+@media (max-width: 768px) {
+  .content1 {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 53px;
+    font-weight: 100px;
+    letter-spacing: var(--ls);
+    position: relative;
+    overflow: hidden;
+    background: var(--bg1);
+    margin-top: -170px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 
 
 
@@ -1509,8 +1477,9 @@ transform: scale(1.2);
   margin-left: auto;
   margin-right: auto;
   display: block;
-  border: 2px solid #44ff00; 
-  border-radius: 10px;
+  border: 2px solid #00ff00; 
+  border-radius: 25px;
+  box-shadow: #00ff00 0px 0px 10px 5px;
  }
  
 
@@ -1530,34 +1499,6 @@ transform: scale(1.2);
   text-align: center;
 }
 
-/*------------------- Optimized for pc screen -------------------*/
-
-@media (min-width: 1200px) {
-
-.container23 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-around;
-}
-
-.box {
-  width: 80%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border: 2px solid #44ff00; 
-  border-radius: 10px;
- }
- .box p {
-  color: #ffffff;
-  font-family: 'Oswald';
-  font-size: 19px;
-  margin: 25px;
-  text-align: center;
-}
- 
-}
 
 /*------------------- Optimized for tablat screen -------------------*/
 
@@ -1573,10 +1514,8 @@ transform: scale(1.2);
   .box {
     width: 90%;
     height: auto;
-    border: 2px solid #44ff00; 
     margin: 15px;
     float: left;
-    border-radius: 10px;
     top: 0px;
     clear: none;
   }
@@ -1597,8 +1536,6 @@ transform: scale(1.2);
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border: 2px solid #44ff00; 
-    border-radius: 10px;
     margin-bottom: 50px;
    }
    .box p {
@@ -1621,8 +1558,8 @@ transform: scale(1.2);
 /*------------------- FAQ -------------------*/
 
 .h2-faq{
-  font-size: 50px;
-  font-family:'Young Serif' ;
+  font-size: 60px;
+  font-family:'Poetsen One' ;
   color: #eaed35;
   text-align: center;
 }
@@ -1630,6 +1567,7 @@ transform: scale(1.2);
 .according {
   margin: 60px auto;
   width: 1200px;
+  cursor: none;
 }
 
 .according li {
@@ -1638,9 +1576,9 @@ transform: scale(1.2);
   margin: 20px;
   padding: 10px;
   border-radius: 8px;
-  background: #111111;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-              6px 6px 10px -1px rgba(51, 51, 51, 0.7);
+  background: black;
+  box-shadow: rgba(61, 93, 50, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: none;
 }
 
 .according li label {
@@ -1649,7 +1587,7 @@ transform: scale(1.2);
   padding: 10px;
   font-size: 18px;
   font-weight: 500;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
+  cursor: none;
 }
 
 .according li label::before {
@@ -1658,6 +1596,7 @@ transform: scale(1.2);
   font-size: 24px;
   font-weight: 600;
   color: #ffffff;
+  cursor: none;
 }
 
 input[type="radio"] {
@@ -1685,88 +1624,16 @@ input[type="radio"]:checked + label::before {
 }
 .faq-main{
   color: #ffffff;
+  cursor: none;
 
 }
 
-/*------------------- Optimized for pc screen -------------------*/
-
-@media (min-width: 1200px) {
-  .h2-faq{
-    font-size: 50px;
-    font-family:'Young Serif' ;
-    color: #fbff00;
-    text-align: center;
-  }
-  
-  .according {
-    margin: 60px auto;
-    width: 80%;
-  }
-  
-  .according li {
-    list-style: none;
-    width: 93%;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background:  #111111;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                6px 6px 10px -1px rgba(51, 51, 51, 0.7);
-  }
-  
-  .according li label {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
-  }
-  
-  .according li label::before {
-    content: '+';
-    margin-right: 10px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #ffffff;
-  }
-  
-  input[type="radio"] {
-    display: none;
-  }
-  
-  .according .content {
-    color: #d7d7d7;
-    padding: 0 10px;
-    line-height: 26px;
-    font-size: 16px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-  }
-  
-  input[type="radio"]:checked + label + .content {
-    max-height: 400px;
-    padding: 10px 10px 20px;
-  }
-  
-  input[type="radio"]:checked + label::before {
-    content: '-';
-    color: #ffffff;
-  }
-  .faq-main{
-    color: #ffffff;
-  
-  }
-
-}
 
 /*------------------- Optimized for tablat screen -------------------*/
 
 @media (max-width: 1199px) and (min-width: 768px) {
   .h2-faq{
     font-size: 40px;
-    font-family:'Young Serif' ;
     color: #eaed35;
     text-align: center;
   }
@@ -1782,9 +1649,6 @@ input[type="radio"]:checked + label::before {
     margin: 20px;
     padding: 10px;
     border-radius: 8px;
-    background:  #111111;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                6px 6px 10px -1px rgba(51, 51, 51, 0.7);
   }
   
   .according li label {
@@ -1793,7 +1657,7 @@ input[type="radio"]:checked + label::before {
     padding: 10px;
     font-size: 18px;
     font-weight: 500;
-    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
+
   }
   
   .according li label::before {
@@ -1839,7 +1703,6 @@ input[type="radio"]:checked + label::before {
 @media (max-width: 768px) {
   .h2-faq{
     font-size: 40px;
-    font-family:'Young Serif' ;
     color: #eaed35;
     text-align: center;
   }
@@ -1855,9 +1718,6 @@ input[type="radio"]:checked + label::before {
     margin: 20px;
     padding: 10px;
     border-radius: 8px;
-    background:  #111111;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                6px 6px 10px -1px rgba(51, 51, 51, 0.7);
   }
   
   .according li label {
@@ -1866,7 +1726,7 @@ input[type="radio"]:checked + label::before {
     padding: 10px;
     font-size: 18px;
     font-weight: 500;
-    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
+    cursor: none;
   }
   
   .according li label::before {
@@ -1943,76 +1803,14 @@ input[type="radio"]:checked + label::before {
 }
 
 /*------------------- Profiles -------------------*/
-
-#profiles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: clamp(10px, 0.8vw, 20px);
-  justify-content: center;
-  margin-left: 10%;
-  width: clamp(600px, 80vw, 1400px);
-}
-
-#profiles > .profile {
-  aspect-ratio: 7 / 8;
-  backdrop-filter: blur(0.75vw);
-  background-color: rgba(255, 255, 255, 0.06);
-  border-radius: 1vw;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
-  transition: background-color 250ms;
-  width: calc(25% - clamp(0px, 0.8vw, 20px));
-}
-
-#profiles > .profile:hover {
-  backdrop-filter: blur(1vw);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.profile > .profile-content {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  height: calc(100% - clamp(8px, 1vw, 12px));
-  justify-content: center;
-  padding: clamp(8px, 1vw, 12px);
-}
-
-.profile > .profile-content > .profile-pic {
-  aspect-ratio: 1;
-  border: clamp(3px, 0.4vw, 5px) solid white;
-  border-radius: 100%;
-  flex-shrink: 0;
-  height: 70%;
-  position: relative;
-}
-
-.profile > .profile-content > .profile-pic > .profile-pic-image {
-  background-color: rgba(255, 255, 255, 0.06);
-  border-radius: 100%;
-  height: calc(100% - clamp(10px, 1.5vw, 20px));
-  margin: clamp(5px, 0.75vw, 10px);
-  object-fit: cover;
-  width: calc(100% - clamp(10px, 1.5vw, 20px));
-}
-
-.profile > .profile-content > .profile-name {
-  color: white;
-  font-family: 'Rubik', sans-serif;
-  font-size: clamp(1em, 2vw, 2em);
-  margin: 0px;
-  text-align: center;
-}
-
-/*------------------- Optimized for pc screen -------------------*/
-
-@media (min-width : 1200px) {
-  
 .h12{
-  font-family: 'Roboto Slab';
+  font-family: 'Freeman';
   font-size: 60px;
-  color: rgb(172, 177, 202); 
-  text-shadow: #0dff00;
+  color: rgb(34, 255, 0); 
+  text-shadow: #44ff00;
   text-align: center;
+  letter-spacing: 1px;
+
 
 }
 
@@ -2025,17 +1823,16 @@ input[type="radio"]:checked + label::before {
   width: clamp(600px, 80vw, 1400px);
 }
 
-#profiles > .profile {
+.profile {
   aspect-ratio: 7 / 8;
   backdrop-filter: blur(0.75vw);
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.033);
   border-radius: 1vw;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   transition: background-color 250ms;
   width: calc(25% - clamp(0px, 0.8vw, 20px));
 }
 
-#profiles > .profile:hover {
+.profile:hover {
   backdrop-filter: blur(1vw);
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -2074,16 +1871,13 @@ input[type="radio"]:checked + label::before {
   margin: 0px;
   text-align: center;
 }
-}
+
 /*------------------- Optimized for tablat screen -------------------*/
 
 @media (max-width: 1199px) and (min-width: 768px) {
 
 .h12{
-    font-family: 'Roboto Slab';
     font-size: 60px;
-    color: rgb(172, 177, 202); 
-    text-shadow: #0dff00;
     text-align: center;
     margin-top: 80px;
     margin-bottom: -50px;
@@ -2099,12 +1893,10 @@ input[type="radio"]:checked + label::before {
 
   }
   
-  #profiles > .profile {
+.profile {
     aspect-ratio: 7 / 8;
     backdrop-filter: blur(0.75vw);
-    background-color: rgba(255, 255, 255, 0.06);
     border-radius: 1vw;
-    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
     transition: background-color 250ms;
     width: 40%;
   }
@@ -2114,7 +1906,7 @@ input[type="radio"]:checked + label::before {
     background-color: rgba(255, 255, 255, 0.1);
   }
   
-  .profile > .profile-content {
+.profile-content {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -2155,12 +1947,10 @@ input[type="radio"]:checked + label::before {
 @media (max-width: 767px) {
 
   .h12{
-    font-family: 'Roboto Slab';
     font-size: 50px;
-    color: rgb(172, 177, 202); 
-    text-shadow: #0dff00;
     text-align: center;
     margin-top: 80px;
+    margin-bottom: 30px;
   
   }
 
@@ -2172,14 +1962,13 @@ input[type="radio"]:checked + label::before {
     width: 97%;
     margin-top: -100px;
     margin-left: 3%;
+    z-index: 10;
   }
 
-  #profiles > .profile {
+ .profile {
     aspect-ratio: 7/8;
     backdrop-filter: blur(0.75vw);
-    background-color: rgba(255, 255, 255, 0.06);
     border-radius: 1vw;
-    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
     transition: background-color 250ms;
     width: 48%; 
     display: flex;
@@ -2189,7 +1978,7 @@ input[type="radio"]:checked + label::before {
     text-align: center;
   }
 
-  #profiles > .profile:hover {
+ .profile:hover {
     backdrop-filter: blur(1vw);
     background-color: rgba(255, 255, 255, 0.1);
   }
@@ -2232,10 +2021,11 @@ input[type="radio"]:checked + label::before {
 footer{
   width: 100%;
   position: relative;
-  background: #111112;
+  background: #000000;
   font-size: 13px;
   padding: 100px 0 125px;
   line-height: 20px;
+  box-shadow: 0 40px 80px 0 rgba(255, 196, 0, 0.219), 0 6px 20px 0 rgba(255, 196, 0, 0.367);
 
 
 }
@@ -2299,12 +2089,12 @@ footer{
 .email-id{
   width: fit-content;
   margin: 20px 0;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 .email-id a{
   text-decoration:none;
   color: hsla(199, 89%, 49%, 1);
+  cursor: none;
 }
 ul li{
   list-style: none;
@@ -2323,6 +2113,7 @@ form{
   justify-content: space-between;
   border-bottom: 1px solid #000000;
   margin-bottom: 50px;
+  cursor: none;
 
 }
 form .fa-regular{
@@ -2342,7 +2133,6 @@ form button{
   background: transparent;
   border: 0;
   outline: none;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 form button .fa-solid{
@@ -2358,7 +2148,6 @@ form button .fa-solid{
   font-size: 20px;
   color: #000000;
   background: #000000;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 hr{
@@ -2435,7 +2224,6 @@ hr{
 .email-id{
   width: fit-content;
   margin: 20px 0;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 .email-id a{
@@ -2472,13 +2260,13 @@ form input{
   color: #ffffff;
   border: 0;
   outline: none;
+  cursor: none;
 
 }
 form button{
   background: transparent;
   border: 0;
   outline: none;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 form button .fa-solid{
@@ -2497,7 +2285,6 @@ form button .fa-solid{
   margin-top: -50px;
   margin-left: 6.5%;
   margin-right: 0%;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   text-align: center;
 
 }
@@ -2586,7 +2373,6 @@ hr{
 .email-id{
   width: fit-content;
   margin: 20px 0;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 .email-id a{
@@ -2632,7 +2418,6 @@ form button{
   background: transparent;
   border: 0;
   outline: none;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
 
 }
 form button .fa-solid{
@@ -2650,7 +2435,6 @@ form button .fa-solid{
   background: #000000;
   margin-left: 2%;
   margin-right: 15%;
-  cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   text-align: center;
 
 }
@@ -2718,9 +2502,253 @@ hr{
     color: #000000;
     background: #000000;
     margin-left: 10%;
-    cursor: url('C:/Users/sachi/Desktop/sachiofficial.github.io/extanal/hand-pointer-solid.svg'), auto;
   
   }
 
 }
 
+
+/*------------------- Social Meadia Topic -------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+:root {
+  --bg10: black;
+  --clr-10: rgb(255, 0, 0);
+  --clr-20: rgb(60, 255, 0);
+  --clr-30: rgb(66, 218, 94);
+  --clr-40: Khaki;
+
+  --blur: 1rem;
+  --fs: clamp(2rem, 7vw, 6rem);
+  --ls: clamp(-1.75px, -0.25vw, -3.5px);
+}
+
+.body-150 {
+  display: grid;
+  place-items: center;
+  background-color: var(--bg10);
+  color: #ffbb00;
+  font-family: "Inter", "DM Sans", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.content1 {
+  text-align: center;
+}
+
+.title10 {
+  font-size: 85px;
+  font-weight: 100px;
+  letter-spacing: var(--ls);
+  position: relative;
+  overflow: hidden;
+  background: var(--bg10);
+  margin: 0;
+  font-family: 'Roboto Slab';
+}
+.aurora102 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  mix-blend-mode: darken;
+  pointer-events: none;
+}
+
+.aurora__item10 {
+  overflow: hidden;
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  background-color: var(--clr-10);
+  border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  filter: blur(var(--blur));
+  mix-blend-mode: overlay;
+}
+
+.aurora__item10:nth-of-type(1) {
+  top: -50%;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-1 12s ease-in-out infinite alternate;
+}
+
+.aurora__item10:nth-of-type(2) {
+  background-color: var(--clr-30);
+  right: 0;
+  top: 0;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-2 12s ease-in-out infinite alternate;
+}
+
+.aurora__item10:nth-of-type(3) {
+  background-color: var(--clr-20);
+  left: 0;
+  bottom: 0;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-3 8s ease-in-out infinite alternate;
+}
+
+.aurora__item10:nth-of-type(4) {
+  background-color: var(--clr-40);
+  right: 0;
+  bottom: -50%;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-4 24s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-1 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+
+  50% {
+    top: 100%;
+    right: 75%;
+  }
+
+  75% {
+    top: 100%;
+    right: 25%;
+  }
+
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+
+@keyframes aurora-2 {
+  0% {
+    top: -50%;
+    left: 0%;
+  }
+
+  60% {
+    top: 100%;
+    left: 75%;
+  }
+
+  85% {
+    top: 100%;
+    left: 25%;
+  }
+
+  100% {
+    top: -50%;
+    left: 0%;
+  }
+}
+
+@keyframes aurora-3 {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+
+  40% {
+    bottom: 100%;
+    left: 75%;
+  }
+
+  65% {
+    bottom: 40%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@keyframes aurora-4 {
+  0% {
+    bottom: -50%;
+    right: 0;
+  }
+
+  50% {
+    bottom: 0%;
+    right: 40%;
+  }
+
+  90% {
+    bottom: 50%;
+    right: 25%;
+  }
+
+  100% {
+    bottom: -50%;
+    right: 0;
+  }
+}
+
+@keyframes aurora-border {
+  0% {
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  }
+
+  25% {
+    border-radius: 47% 29% 39% 49% / 61% 19% 66% 26%;
+  }
+
+  50% {
+    border-radius: 57% 23% 47% 72% / 63% 17% 66% 33%;
+  }
+
+  75% {
+    border-radius: 28% 49% 29% 100% / 93% 20% 64% 25%;
+  }
+
+  100% {
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  }
+}
+
+
+
+
+
+/*------------------- Optimized for tablat screen -------------------*/
+
+@media (max-width: 1199px) and (min-width: 768px) {
+
+  .title10 {
+    font-size: 70px;
+    font-weight: 100px;
+    letter-spacing: var(--ls);
+    position: relative;
+    overflow: hidden;
+    background: var(--bg10);
+    margin-top: -110px;
+  }
+}
+
+/*------------------- Optimized for mobile screen -------------------*/
+@media (max-width: 768px) {
+  .content1 {
+    text-align: center;
+  }
+  
+  .title10 {
+    font-size: 53px;
+    font-weight: 100px;
+    letter-spacing: var(--ls);
+    position: relative;
+    overflow: hidden;
+    background: var(--bg10);
+    margin-top: -170px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
