@@ -125,7 +125,7 @@ body {
   font-family: var(--fontFamily-noto_sans);
   font-size: 1.6rem;
   line-height: var(--lineHeight-4);
-  overflow-y: overlay;
+  overflow-x: hidden;
 }
 
 body.nav-active { overflow: hidden; }
@@ -2749,5 +2749,7 @@ hr{
     margin-top: -170px;
     margin-left: 10px;
     margin-right: 10px;
+    align-self:last baseline;
   }
 }
+
