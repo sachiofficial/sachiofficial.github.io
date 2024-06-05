@@ -110,23 +110,3 @@ document.addEventListener("mouseleave", () => {
 document.addEventListener("mouseenter", () => {
   cursor.style.opacity = "1"; // Show the cursor when it enters the window
 });
-<<<<<<< HEAD
-=======
-
-function adjustElementWidth() {
-  const element = document.querySelector(".problematic-element");
-  const availableWidth = window.innerWidth;
-  element.style.width = `${availableWidth}px`;
-}
-
-window.addEventListener("resize", adjustElementWidth);
-adjustElementWidth(); // Call on initial page load
-
-function adjustPaddingMargin(element, paddingPercentage) {
-  const availableWidth = window.innerWidth;
-  const padding = (availableWidth * paddingPercentage) / 100;
-  element.style.padding = `${padding}px`; // Adjust for margin if needed
-}
-
-adjustPaddingMargin(document.querySelector(".problematic-element"), 5); // Set 5% padding
->>>>>>> 5df154ea6e4697393c64656bed38880d60c43c93
