@@ -1,9 +1,9 @@
 :root {
   --bg-wild-blue-yonder: hsla(216, 33%, 68%, 1);
   --bg-carolina-blue: hsla(199, 89%, 49%, 1);
-  --bg-prussian-blue: hsla(216, 33%, 20%, 1);
-  --bg-oxford-blue: hsla(222, 44%, 13%, 1);
-  --bg-oxford-blue-2: hsla(222, 47%, 11%, 1);
+  --bg-prussian-blue: rgba(34, 48, 68, 0);
+  --bg-oxford-blue: rgba(19, 27, 48, 0);
+  --bg-oxford-blue-2: rgba(15, 23, 41, 0);
   --text-white: hsla(0, 0%, 100%, 1);
   --text-alice-blue: hsla(216, 100%, 95%, 1);
   --text-columbia-blue: hsla(199, 69%, 84%, 1);
@@ -13,11 +13,11 @@
   --text-slate-gray: hsla(217, 17%, 48%, 1);
   --gradient-1: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
   --gradient-2: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
-  --gradient-3: linear-gradient(0deg, #000d1a, transparent);
+  --gradient-3: linear-gradient(0deg, #000d1a00, transparent);
   --border-wild-blue-yonder: hsla(216, 33%, 68%, 1);
-  --border-prussian-blue: hsla(216, 33%, 20%, 1);
+  --border-prussian-blue: rgba(34, 48, 68, 0);
   --border-white: hsl(0, 0%, 100%);
-  --border-white-alpha-15: hsla(0, 0%, 100%, 0.15);
+  --border-white-alpha-15: hsla(0, 0%, 100%, 0);
   --white: hsl(0, 0%, 100%, 1);
   --black: hsl(0, 0%, 0%, 1);
   --fontFamily-noto_sans: 'Noto Sans', sans-serif;
@@ -36,8 +36,8 @@
   --lineHeight-1: 1.3;
   --lineHeight-2: 1.5;
   --lineHeight-4: 1.5;
-  --shadow-1: 0 8px 20px 0 hsla(0, 0%, 0%, 0.05);
-  --shadow-2: 0px 3px 20px hsla(180, 90%, 43%, 0.2);
+  --shadow-1: 0 8px 20px 0 hsla(0, 0%, 0%, 0);
+  --shadow-2: 0px 3px 20px hsla(180, 90%, 43%, 0);
   --radius-6: 6px;
   --radius-8: 8px;
   --radius-16: 16px;
@@ -84,7 +84,7 @@ a {
 }
 a, button {
 
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -371,8 +371,9 @@ body.nav-active { overflow: hidden; }
   left: 0;
   width: 100%;
   padding-block: 10px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   z-index: 100;
+  
 }
 
 .header.active {
@@ -2017,156 +2018,37 @@ input[type="radio"]:checked + label::before {
 
 /*------------------- Footer -------------------*/
 
-footer{
-  width: 100%;
-  position: relative;
-  background: #000000;
-  font-size: 13px;
-  padding: 100px 0 125px;
-  line-height: 20px;
-  box-shadow: 0 40px 80px 0 rgba(255, 196, 0, 0.219), 0 6px 20px 0 rgba(255, 196, 0, 0.367);
-
-
-}
-.row{
-  width: 85%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-
-
-}
-.col{
-  flex-basis: 25%;
-  padding: 10px;
-
-}
-.col:nth-child(2),.col:nth-child(3){
-  flex-basis: 15%;
-
-}
-
-.col p{
-  font-size: 13px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 60px;
-  color: hsla(199, 89%, 49%, 1);
-
-}
-
-.col h3{
-  width: fit-content;
-  margin-bottom: 40px;
-  position: relative;
-  color: hsla(199, 89%, 49%, 1);
-
-}
-
-.col1 h6{
-  width: fit-content;
-  margin-bottom: 40px;
-  position: relative;
-  margin-left: -110px;
-  font-size: 17px;
-  margin-top: 13px;
-  color: hsla(199, 89%, 49%, 1);
-
-}
-.col1 p{
-  margin-left: -110px;
-  color: hsla(199, 89%, 49%, 1);
-
-}
-.col1 h4{
-  margin-left: -110px;
-  color: hsla(199, 89%, 49%, 1);
-
-}
-.email-id{
-  width: fit-content;
-  margin: 20px 0;
-
-}
-.email-id a{
-  text-decoration:none;
-  color: hsla(199, 89%, 49%, 1);
-  cursor: none;
-}
-ul li{
-  list-style: none;
-  margin-bottom: 12px;
-
-}
-ul li a{
-  text-decoration:none;
-  color: hsla(199, 89%, 49%, 1);
-
-}
-form{
-  padding-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #000000;
-  margin-bottom: 50px;
-  cursor: none;
-
-}
-form .fa-regular{
-  font-size: 18px;
-  margin-right: 10px;
-
-}
-form input{
-  width: 100%;
-  background: transparent;
-  color: #ffffff;
-  border: 0;
-  outline: none;
-
-}
-form button{
-  background: transparent;
-  border: 0;
-  outline: none;
-
-}
-form button .fa-solid{
-  font-size: 16px;
-  color: #ffffff;
-}
-.social-icons .fa-brands{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  font-size: 20px;
-  color: #000000;
-  background: #000000;
-
-}
-hr{
-  width: 90%;
-  border: 0;
-  border-bottom: 1px solid #959bad;
-  margin: 20px auto;
+  footer{
+    width: 100%;
+    position: relative;
+    background: #000000;
+    font-size: 13px;
+    padding: 100px 0 125px;
+    line-height: 20px;
+    box-shadow: 0 40px 80px 0 rgba(255, 196, 0, 0.219), 0 6px 20px 0 rgba(255, 196, 0, 0.367);
+  
+  
+  }
+  .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+  
+  }
+  .col{
+    flex-basis: 25%;
 
   
-}
-.copyright{
-  text-align: center;
-  margin-bottom: -100px;
-    color: #5e7ba6;
+  }
+  .col:nth-child(2),.col:nth-child(3){
+    flex-basis: 15%;
+  
+  }
 
-}
-
-/*------------------- Optimized for pc screen -------------------*/
-
-@media (min-width: 1200px) {
 .image246 {
     margin-top: -10px;
     margin-left: 15px;
@@ -2179,7 +2061,7 @@ hr{
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 60px;
-  color: hsla(199, 89%, 49%, 1);
+  color: WhiteSmoke;
 
 }
 
@@ -2187,39 +2069,22 @@ hr{
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
-  color: hsla(199, 89%, 49%, 1);
+  color: AliceBlue;
 
 
 }
 
-.col h3{
-  width: fit-content;
-  margin-bottom: 40px;
-  position: relative;
-  color: hsla(199, 89%, 49%, 1);
-
-}
-
-.col1 h6{
-  width: fit-content;
-  margin-bottom: 40px;
-  position: relative;
-  margin-left: 0px;
-  font-size: 17px;
-  margin-top: 13px;
-  color: hsla(199, 89%, 49%, 1);
-
-}
 .col1 p{
   margin-left: 0px;
-  color: hsla(199, 89%, 49%, 1);
+  color: Azure;
 
 }
-.col1 h4{
-  margin-left: 0px;
-  color: hsla(199, 89%, 49%, 1);
 
+.number{
+  width: fit-content;
+  font-weight: bold;
 }
+
 .email-id{
   width: fit-content;
   margin: 20px 0;
@@ -2227,16 +2092,22 @@ hr{
 }
 .email-id a{
   text-decoration:none;
-  color: hsla(199, 89%, 49%, 1);
+  color: Azure;
 }
-ul li{
+
+.footer-links{
+  margin-top: -15px;
+}
+
+.footer-links li{
   list-style: none;
   margin-bottom: 12px;
 
 }
-ul li a{
+.footer-links li a{
+  
   text-decoration:none;
-  color: hsla(199, 89%, 49%, 1);
+  color: Azure;
 
 }
 form{
@@ -2298,10 +2169,9 @@ hr{
 .copyright{
   text-align: center;
   margin-bottom: -100px;
-    color: #5e7ba6;
+  color: FloralWhite;
 
   }
-}
 
 /*------------------- Optimized for tablat screen ------------------- */
 
@@ -2328,66 +2198,47 @@ hr{
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 0px;
-  color: hsla(199, 89%, 49%, 1);
 
 }
 
-.col h3{
-  width: fit-content;
-  margin-bottom: 40px;
-  position: relative;
-  color: hsla(199, 89%, 49%, 1);
-
-}
 .col h2{
   width: 100%;
   margin-bottom: 40px;
   position: relative;
-  color: hsla(199, 89%, 49%, 1);
-  text-align: center;
-  
 
 }
 
-.col1 h6{
-  width: fit-content;
-  margin-bottom: 40px;
-  position: relative;
-  margin-left: 0px;
-  font-size: 17px;
-  margin-top: 13px;
-  color: hsla(199, 89%, 49%, 1);
-
-}
 .col1 p{
   margin-left: 0px;
-  color: hsla(199, 89%, 49%, 1);
 
 }
+
 .col1 h4{
   margin-left: 0px;
-  color: hsla(199, 89%, 49%, 1);
 
+}
+.newsletter {
+  margin-top: 20px;
+  text-align: center;
 }
 .email-id{
   width: fit-content;
-  margin: 20px 0;
-
+  margin: 7px 0;
 }
+
 .email-id a{
   text-decoration:none;
-  color: hsla(199, 89%, 49%, 1);
 }
+
 ul li{
   list-style: none;
   margin-bottom: 12px;
-
 }
+
 ul li a{
   text-decoration:none;
-  color: hsla(199, 89%, 49%, 1);
-
 }
+
 form{
   padding-bottom: 15px;
   display: flex;
@@ -2397,14 +2248,14 @@ form{
   margin: 0 auto;
   margin-bottom: 20px;
   
-
 }
+
 form .fa-regular{
   font-size: 18px;
   margin-right: 10px;
 
-
 }
+
 form input{
   width: 500px;
   background: transparent;
@@ -2413,16 +2264,19 @@ form input{
   outline: white;
 
 }
+
 form button{
   background: transparent;
   border: 0;
   outline: none;
 
 }
+
 form button .fa-solid{
   font-size: 16px;
   color: #ffffff;
 }
+
 .social-icons .fa-brands{
   width: 40px;
   height: 40px;
@@ -2437,6 +2291,7 @@ form button .fa-solid{
   text-align: center;
 
 }
+
 hr{
   width: 90%;
   border: 0;
@@ -2448,9 +2303,8 @@ hr{
 .copyright{
   text-align: center;
   margin-bottom: -100px;
-    color: #5e7ba6;
 
-  }
+}
 
 }
 
@@ -2462,33 +2316,47 @@ hr{
     margin: 0px left;  
     width: 200px;     
   }
+
   footer{
     bottom: unset;
   }
+
   .col h2{
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
-    color: hsla(199, 89%, 49%, 1);
+    color: AliceBlue;
   
   }
   .col{
     flex-basis: 100%;
   }
-  .col1 {
-    flex-basis: 100%;
-    margin-left: 120px;
-  }
+
   .col:nth-child(2),.col:nth-child(3){
     flex-basis: 100%;
   }
+
   .col p{
     margin-left: -1px;
   }
-  
+
+  .col1 {
+    flex-basis: 100%;
+    margin-top: 20px;
+    width: fit-content;
+  }
+
+  .newsletter{
+    margin-top: 15px;
+  }
+
   form button .fa-solid{
     font-size: 16px;
     color: #ffffff;
+  }
+
+  .number{
+    margin-bottom: -10px;
   }
 
   .social-icons .fa-brands{
