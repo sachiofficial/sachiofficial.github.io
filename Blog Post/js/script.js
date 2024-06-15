@@ -1,6 +1,4 @@
-'use strict';
-
-
+"use strict";
 
 /**
  * Add event listener on multiple elements
@@ -10,9 +8,7 @@ const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
   }
-}
-
-
+};
 
 /**
  * MOBILE NAVBAR TOGGLER
@@ -24,11 +20,9 @@ const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const toggleNav = () => {
   navbar.classList.toggle("active");
   document.body.classList.toggle("nav-active");
-}
+};
 
 addEventOnElements(navTogglers, "click", toggleNav);
-
-
 
 /**
  * HEADER ANIMATION
@@ -48,8 +42,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-
 /**
  * SLIDER
  */
@@ -59,14 +51,17 @@ const sliderContainer = document.querySelector("[data-slider-container]");
 const sliderPrevBtn = document.querySelector("[data-slider-prev]");
 const sliderNextBtn = document.querySelector("[data-slider-next]");
 
-let totalSliderVisibleItems = Number(getComputedStyle(slider).getPropertyValue("--slider-items"));
-let totalSlidableItems = sliderContainer.childElementCount - totalSliderVisibleItems;
+let totalSliderVisibleItems = Number(
+  getComputedStyle(slider).getPropertyValue("--slider-items")
+);
+let totalSlidableItems =
+  sliderContainer.childElementCount - totalSliderVisibleItems;
 
 let currentSlidePos = 0;
 
 const moveSliderItem = function () {
   sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
-}
+};
 
 /**
  * NEXT SLIDE
@@ -82,7 +77,7 @@ const slideNext = function () {
   }
 
   moveSliderItem();
-}
+};
 
 sliderNextBtn.addEventListener("click", slideNext);
 
@@ -98,7 +93,7 @@ const slidePrev = function () {
   }
 
   moveSliderItem();
-}
+};
 
 sliderPrevBtn.addEventListener("click", slidePrev);
 
@@ -106,8 +101,11 @@ sliderPrevBtn.addEventListener("click", slidePrev);
  * RESPONSIVE
  */
 window.addEventListener("resize", function () {
-  totalSliderVisibleItems = Number(getComputedStyle(slider).getPropertyValue("--slider-items"));
-  totalSlidableItems = sliderContainer.childElementCount - totalSliderVisibleItems;
+  totalSliderVisibleItems = Number(
+    getComputedStyle(slider).getPropertyValue("--slider-items")
+  );
+  totalSlidableItems =
+    sliderContainer.childElementCount - totalSliderVisibleItems;
 
   moveSliderItem();
 });

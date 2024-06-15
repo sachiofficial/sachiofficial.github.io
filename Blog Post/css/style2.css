@@ -1,0 +1,70 @@
+.title-text{
+    color: aliceblue;
+}
+
+:hover .title-text{
+    color: aliceblue;
+}
+
+.card-text , .card-text a {
+    color: WhiteSmoke;
+}
+
+.hash{
+    color: lightgray;
+}
+
+.card-title-name, .card-subtitle, .card-btn {
+ 
+    color: Gainsboro;
+}
+
+.publish-date{
+    color: lightgray;
+}
+
+@media (max-width: 768px) {
+
+    .best-image {
+      margin: 13px;
+      aspect-ratio: 16 / 11;
+      background-color: var(--bg-prussian-blue);
+      overflow: hidden;
+      margin-bottom: -20px;
+    }
+  }
+
+  .background-image{
+    height: 100dvh;
+    background-image: url("C:\Users\sachi\Desktop\sachiofficial.github.io\Blog Post\images\hero-back.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .blog-h2 {
+    color: aliceblue;
+    text-align: center;  
+    font-size: 50px;
+    position: relative; 
+    top: 50%;  
+    transform: translateY(-50%); 
+  }
+  
+  .scroll-down{
+
+    position: relative;
+    top: 60%;
+    transform: translateY(-60%);
+    text-align: center;
+  
+  }
+
+  .scroll-down img{
+
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateX(5%);
+  
+  }
