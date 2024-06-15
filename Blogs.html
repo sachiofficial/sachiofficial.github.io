@@ -177,6 +177,7 @@
       <!-- FEATURED POST -->
 
       <main>
+        <img src="Home Pages/images/Home Page/chat-bot.png" class="chatnew">
         <article><br>
       <section class="section feature" aria-label="feature" id="featured">
         <div class="container">
@@ -1213,7 +1214,31 @@ document.addEventListener("mouseenter", () => {
 
     </script>
     
-
+    <script>
+      (function (w, d, s, o, f, js, fjs) {
+              w[o] = w[o] || function () {
+                  (w[o].q = w[o].q || []).push(arguments) };
+              js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+              js.id = o; js.src = f; js.async = 1;
+              fjs.parentNode.insertBefore(js, fjs) }
+          (window, document, 'script', 'nw', './Home Pages/js/chat-bot.js'));
+              nw('init', {
+                  apiKey: '2ace2d6c-a571-4ec7-9540-b0a2e62e3098',
+                  serviceBaseUrl: 'https://api.norby.io',
+                  lang: 'en',
+                  languageList: ['EN','RU','EE','IT','FR','DE','UA','ES','FI','SV','DA','NO','PL','PT','TR','ZH','JA'],
+                  mainColor: '#000000',
+                  popupBotAvatarColor: '#000000',
+                  multichat: false,
+                  botName: 'Sachintha Lakshan',
+                  imageTransferEnabled: true,
+                  side: 'right',
+                  marginSideDesktop: 80,
+                  marginBottomDesktop: 48,
+                  marginSideMobile: 16,
+                  marginBottomMobile: 16
+              });
+          </script>
 </body>
 
 </html>
