@@ -68,3 +68,38 @@
     transform: translateX(5%);
   
   }
+
+
+  .btn--neon {
+    position: relative;
+    padding: 12px 36px;
+    margin: 10px auto;
+    font-size: 13px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 45px;
+    transition: 0.5s;
+    color: black;
+    background-color: aliceblue;
+    width: 68%;
+    white-space: nowrap;
+    font-family: 'Poetsen One';
+    font-weight: 400;
+    box-shadow: rgb(136, 133, 133) 0px 0px 10px 5px inset;
+  }
+  
+
+  @media(max-width: 768px) {
+
+    .btn--neon {
+      margin-bottom: -150px;
+    }
+  }
